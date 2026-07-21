@@ -1,0 +1,2244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoreLume Pebble - Flow Companion | Screen-Free AI Voice Micro-Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#06060a',
+                        darker: '#030305',
+                        card: '#0f0f14',
+                        accent: '#7c3aed',
+                        'accent-light': '#a78bfa',
+                        surface: '#13131a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #06060a;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #06060a; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+        /* Hero wave canvas */
+        #waveCanvas {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            pointer-events: none;
+            opacity: 0.6;
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(2deg); }
+        }
+        @keyframes floatReverse {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(20px) rotate(-2deg); }
+        }
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.4; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.1); }
+        }
+        @keyframes star-twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        .float-1 { animation: float 6s ease-in-out infinite; }
+        .float-2 { animation: floatReverse 7s ease-in-out infinite; }
+        .float-3 { animation: float 8s ease-in-out infinite 1s; }
+        .float-4 { animation: floatReverse 6.5s ease-in-out infinite 0.5s; }
+
+        /* Glass morphism */
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .glass-strong {
+            background: rgba(15, 15, 20, 0.8);
+            backdrop-filter: blur(30px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* Gradient text */
+        .gradient-text {
+            background: linear-gradient(135deg, #fff 0%, #a78bfa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Blurred orbs */
+        .orb {
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.7;
+        }
+
+        /* Audio visualizer bars */
+        .audio-bar {
+            animation: sound 1.2s ease-in-out infinite;
+        }
+        @keyframes sound {
+            0%, 100% { height: 4px; }
+            50% { height: 20px; }
+        }
+
+        /* Star field */
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: star-twinkle var(--duration) ease-in-out infinite;
+        }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        /* Phone mockup */
+        .phone-mockup {
+            border: 2px solid rgba(255,255,255,0.1);
+            border-radius: 40px;
+            background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
+            box-shadow: 0 50px 100px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+
+        /* App download showcase */
+        .download-showcase {
+            width: min(88vw, 1660px);
+            aspect-ratio: 1.82 / 1;
+            min-height: 680px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(181, 124, 238, 0.82);
+            border-radius: 42px;
+            background:
+                radial-gradient(ellipse at 56% 105%, rgba(185, 169, 144, 0.22) 0%, rgba(93, 79, 74, 0.11) 26%, transparent 56%),
+                radial-gradient(ellipse at 55% 12%, rgba(76, 59, 55, 0.12) 0%, transparent 58%),
+                linear-gradient(118deg, #090506 0%, #0d0909 42%, #100d0d 65%, #090707 100%);
+            box-shadow:
+                inset 0 1px 0 rgba(244, 192, 132, 0.48),
+                inset 0 0 110px rgba(0, 0, 0, 0.5);
+        }
+        .download-showcase::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background:
+                linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.018) 48%, transparent 100%),
+                repeating-linear-gradient(104deg, rgba(255,255,255,0.006) 0 1px, transparent 1px 16px);
+            opacity: 0.7;
+        }
+        .download-showcase-grid {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 61% 39%;
+        }
+        .download-showcase-copy {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 5% 0 7% 4%;
+        }
+        .download-rating-label {
+            color: #858184;
+            font-size: clamp(13px, 0.9vw, 18px);
+            font-weight: 600;
+            letter-spacing: 0.09em;
+            margin-bottom: 4px;
+        }
+        .download-rating-score {
+            color: white;
+            font-size: clamp(38px, 3vw, 54px);
+            font-weight: 700;
+            line-height: 1;
+        }
+        .download-stars svg {
+            width: clamp(18px, 1.35vw, 25px);
+            height: clamp(18px, 1.35vw, 25px);
+        }
+        .download-showcase-title {
+            max-width: 950px;
+            margin-top: 20px;
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(68px, 5.45vw, 108px);
+            font-weight: 400;
+            line-height: 0.93;
+            letter-spacing: -0.055em;
+        }
+        .download-showcase-button {
+            margin-top: clamp(66px, 6vw, 112px);
+            min-width: clamp(370px, 29vw, 470px);
+            min-height: 92px;
+            padding: 0 42px;
+            border: 2px solid rgba(255,255,255,0.82);
+            border-radius: 16px;
+            color: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 22px;
+            font-size: clamp(20px, 1.45vw, 28px);
+            font-weight: 600;
+            transition: background 0.25s ease, transform 0.25s ease;
+        }
+        .download-showcase-button:hover {
+            background: rgba(255,255,255,0.07);
+            transform: translateY(-2px);
+        }
+        .download-phone-stage {
+            position: relative;
+            height: 100%;
+        }
+        .download-phone {
+            position: absolute;
+            top: 17%;
+            left: 48%;
+            width: 280px;
+            transform: translateX(-50%) scale(1.68);
+            transform-origin: top center;
+        }
+        @media (max-width: 1023px) {
+            .download-showcase {
+                width: calc(100vw - 32px);
+                min-height: 1120px;
+                aspect-ratio: auto;
+                border-radius: 30px;
+            }
+            .download-showcase-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: 48% 52%;
+            }
+            .download-showcase-copy {
+                padding: 64px 24px 22px;
+                justify-content: flex-start;
+            }
+            .download-showcase-title {
+                font-size: clamp(48px, 10vw, 76px);
+            }
+            .download-showcase-button {
+                margin-top: 48px;
+                min-width: min(390px, 88vw);
+                min-height: 72px;
+                padding: 0 24px;
+            }
+            .download-phone {
+                top: 6%;
+                left: 50%;
+                transform: translateX(-50%) scale(1.28);
+            }
+        }
+        @media (max-width: 520px) {
+            .download-showcase { min-height: 940px; }
+            .download-showcase-grid { grid-template-rows: 49% 51%; }
+            .download-showcase-copy { padding-top: 42px; }
+            .download-showcase-title { font-size: 47px; }
+            .download-showcase-button { margin-top: 34px; font-size: 17px; }
+            .download-phone { transform: translateX(-50%) scale(1.05); }
+        }
+
+        /* Pebble hardware mockup */
+        .pebble-device {
+            background: radial-gradient(circle at 30% 30%, #3a3a4a, #1a1a2e);
+            border-radius: 50%;
+            box-shadow: 
+                0 20px 60px rgba(124, 58, 237, 0.3),
+                inset 0 2px 4px rgba(255,255,255,0.1),
+                inset 0 -2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* Topic pill active */
+        .pill-active {
+            background: white;
+            color: black;
+            border-color: white;
+        }
+        .pill-inactive {
+            background: rgba(255,255,255,0.08);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Nav transition */
+        nav.scrolled {
+            background: rgba(6, 6, 10, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* Language switcher */
+        .language-option[aria-checked="true"] {
+            background: rgba(124, 58, 237, 0.22);
+            color: #c4b5fd;
+        }
+        .language-option:focus-visible,
+        #language-toggle:focus-visible {
+            outline: 2px solid #a78bfa;
+            outline-offset: 2px;
+        }
+
+        /* Large footer text */
+        .footer-logo {
+            font-size: clamp(80px, 15vw, 200px);
+            line-height: 0.85;
+            letter-spacing: -0.04em;
+        }
+
+        /* Card hover */
+        .hover-card {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+        }
+        .hover-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+        }
+
+        /* Mindspace spinner */
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .spinner-ring {
+            animation: spin-slow 3s linear infinite;
+        }
+
+        /* Section divider gradient */
+        .section-fade {
+            background: linear-gradient(to bottom, transparent, #06060a);
+        }
+
+        /* Particle canvas */
+        #particleCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Content wrapper */
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ====== Interactive Player Section Styles ====== */
+        .player-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #06060a;
+        }
+
+        .bg-text-layer {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+            z-index: 0;
+            padding: 0 2rem;
+        }
+
+        .bg-text-content {
+            font-size: clamp(1.2rem, 2.5vw, 2.2rem);
+            font-weight: 500;
+            text-align: center;
+            max-width: 1200px;
+            line-height: 1.5;
+            color: rgba(255,255,255,0.15);
+            transition: opacity 0.5s ease;
+        }
+
+        .bg-text-content .highlight {
+            color: rgba(255,255,255,0.95);
+            font-weight: 600;
+        }
+
+        .vertical-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 1;
+            font-size: 10px;
+            letter-spacing: 0.3em;
+            color: rgba(255,255,255,0.25);
+            text-transform: uppercase;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            white-space: nowrap;
+        }
+
+        .player-card-wrapper {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 420px;
+        }
+
+        .player-card {
+            background: linear-gradient(180deg, #16162a 0%, #0f0f1a 100%);
+            border-radius: 32px;
+            padding: 12px;
+            width: 100%;
+            max-width: 340px;
+            box-shadow: 
+                0 40px 80px rgba(0,0,0,0.6),
+                0 0 0 1px rgba(255,255,255,0.06);
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-cover {
+            border-radius: 24px;
+            overflow: hidden;
+            height: 400px;
+            position: relative;
+            transition: all 0.5s ease;
+        }
+
+        .card-info {
+            padding: 16px 8px 8px;
+        }
+
+        .sources-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+
+        .source-avatars {
+            display: flex;
+            align-items: center;
+        }
+
+        .source-avatar {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #16162a;
+            margin-left: -6px;
+        }
+        .source-avatar:first-child { margin-left: 0; }
+
+        .source-count {
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+            font-weight: 500;
+        }
+
+        .player-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .play-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+        .play-btn:hover {
+            background: rgba(255,255,255,0.1);
+            transform: scale(1.05);
+        }
+
+        .time-display {
+            font-size: 11px;
+            color: rgba(255,255,255,0.4);
+            font-family: 'Inter', monospace;
+            font-variant-numeric: tabular-nums;
+            min-width: 32px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 4px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 2px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            background: rgba(255,255,255,0.5);
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+
+        .topic-buttons {
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            right: 0;
+            z-index: 20;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 0 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .topic-btn {
+            padding: 10px 20px;
+            border-radius: 9999px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            font-family: 'Playfair Display', serif;
+            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(255,255,255,0.06);
+            color: rgba(255,255,255,0.8);
+        }
+
+        .topic-btn:hover {
+            background: rgba(255,255,255,0.12);
+            transform: translateY(-1px);
+        }
+
+        .topic-btn.active {
+            background: white;
+            color: black;
+            border-color: white;
+            font-weight: 600;
+        }
+
+        .get-started-btn {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 20;
+            padding: 12px 32px;
+            border-radius: 9999px;
+            background: white;
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .get-started-btn:hover {
+            background: #f0f0f0;
+            transform: translateX(-50%) scale(1.03);
+        }
+
+        /* Cover specific styles */
+        .cover-nietzsche {
+            background: #0000ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+        .cover-nietzsche svg { filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2)); }
+        .cover-nietzsche .cover-title {
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 22px;
+            text-align: center;
+            line-height: 1.3;
+            margin-top: 20px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .cover-charisma {
+            background: linear-gradient(180deg, #0a1628 0%, #1a3a52 40%, #2dd4bf 70%, #fcd34d 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cover-charisma::before {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 140%;
+            height: 80%;
+            background: url('https://images.unsplash.com/photo-1535083783855-76ae62b2914e?w=400&h=400&fit=crop') center/cover;
+            opacity: 0.9;
+            mix-blend-mode: soft-light;
+        }
+        .cover-charisma .cover-title {
+            color: #fcd34d;
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.1;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+        }
+        .cover-charisma .feather-icon {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 120px;
+            opacity: 0.9;
+            z-index: 2;
+        }
+
+        .cover-love {
+            background: linear-gradient(135deg, #f9a8d4 0%, #c084fc 50%, #fcd34d 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            position: relative;
+        }
+        .cover-love .heart-container {
+            width: 120px;
+            height: 120px;
+            margin: 20px 0;
+            position: relative;
+        }
+        .cover-love .heart-left,
+        .cover-love .heart-right {
+            position: absolute;
+            width: 60px;
+            height: 100px;
+            top: 10px;
+        }
+        .cover-love .heart-left {
+            left: 10px;
+            background: linear-gradient(135deg, #fbcfe8 0%, #f9a8d4 100%);
+            border-radius: 60px 60px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 100% 100%;
+            box-shadow: inset -2px -2px 8px rgba(0,0,0,0.05);
+        }
+        .cover-love .heart-right {
+            right: 10px;
+            background: linear-gradient(135deg, #f472b6 0%, #db2777 100%);
+            border-radius: 60px 60px 0 0;
+            transform: rotate(45deg);
+            transform-origin: 0 100%;
+            box-shadow: inset 2px -2px 8px rgba(0,0,0,0.05);
+        }
+        .cover-love .cover-title {
+            color: #1e1b4b;
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.15;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cover-dopamine {
+            background: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            position: relative;
+        }
+        .cover-dopamine .brain-icon {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            color: #ef4444;
+        }
+        .cover-dopamine .cover-title {
+            color: #b91c1c;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.1;
+            font-style: italic;
+            letter-spacing: -0.02em;
+        }
+        .cover-dopamine .cover-subtitle {
+            color: #ef4444;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-top: 12px;
+        }
+
+        .cover-leaders {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cover-leaders .cover-title {
+            color: #ccfbf1;
+            font-family: 'Inter', sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.2;
+            position: relative;
+            z-index: 2;
+            max-width: 220px;
+        }
+        .cover-leaders .brain-gear {
+            position: absolute;
+            bottom: 40px;
+            right: 30px;
+            width: 100px;
+            height: 100px;
+            color: #f472b6;
+            opacity: 0.9;
+            z-index: 2;
+        }
+
+        /* Card switch animation */
+        .card-enter {
+            animation: cardEnter 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        @keyframes cardEnter {
+            from { opacity: 0; transform: translateY(20px) scale(0.95); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        /* Noise texture overlay */
+        .noise-overlay {
+            position: absolute;
+            inset: 0;
+            opacity: 0.03;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            background-size: 128px 128px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Particle Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="content-wrapper">
+        <!-- Navbar -->
+        <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <svg width="38" height="38" viewBox="0 0 40 40" fill="none" aria-label="LoreLume logo">
+                        <path d="M20.2 2.5C30.7 2.5 37.7 9.8 37.5 19.8C37.3 30.2 29.9 37.4 19.5 37.5C9.2 37.6 2.5 30.6 2.5 20.2C2.5 10.1 9.8 2.5 20.2 2.5Z" fill="url(#logoGrad)"/>
+                        <path d="M8.5 21C10.7 15.8 12.9 15.8 15.1 21C17.3 26.2 19.5 26.2 21.7 21C23.9 15.8 26.1 15.8 28.3 21C30 25 31.7 25.8 33.2 23.4" stroke="white" stroke-width="2.35" stroke-linecap="round"/>
+                        <path d="M11.5 12.8C16.1 9.1 23.7 8.8 29.1 13" stroke="rgba(255,255,255,0.58)" stroke-width="1.4" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="5" y1="4" x2="36" y2="37">
+                                <stop stop-color="#f2b66d"/>
+                                <stop offset="0.48" stop-color="#a56bf2"/>
+                                <stop offset="1" stop-color="#6157e8"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="text-xl font-semibold tracking-[-0.02em]">LoreLume</span>
+                </div>
+
+                <!-- Language Switcher -->
+                <div class="flex items-center gap-3">
+                    <div id="language-switcher" class="relative">
+                        <button id="language-toggle" type="button" class="h-10 px-3 rounded-full glass flex items-center justify-center gap-2 hover:bg-white/5 transition-colors text-sm font-medium" aria-haspopup="menu" aria-expanded="false" aria-label="Choose language">
+                            <i class="fas fa-globe text-sm" aria-hidden="true"></i>
+                            <span id="current-language" class="hidden sm:inline">English</span>
+                            <i class="fas fa-chevron-down text-[10px] opacity-60" aria-hidden="true"></i>
+                        </button>
+                        <div id="language-menu" class="hidden absolute right-0 mt-2 w-32 rounded-2xl glass-strong p-1.5 shadow-2xl" role="menu" aria-label="Language">
+                            <button type="button" class="language-option w-full px-3 py-2 rounded-xl text-left text-sm hover:bg-white/10 transition-colors" data-lang="en" role="menuitemradio" aria-checked="true">English</button>
+                            <button type="button" class="language-option w-full px-3 py-2 rounded-xl text-left text-sm hover:bg-white/10 transition-colors" data-lang="zh" role="menuitemradio" aria-checked="false">中文</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+            <!-- Background gradient -->
+            <div class="absolute inset-0 bg-gradient-to-b from-dark via-dark to-darker"></div>
+
+            <!-- Mascot -->
+            <div class="absolute top-24 left-[12%] float-1 hidden lg:block">
+                <img src="https://d1y2du6z1jfm9e.cloudfront.net/landing/freedia_welcome.webp" 
+                     alt="Freedia Mascot" 
+                     width="200" 
+                     height="200"
+                     style="filter: drop-shadow(0 10px 30px rgba(255,255,255,0.1));"
+                     class="object-contain">
+            </div>
+
+            <!-- Hero Content -->
+            <div class="relative z-10 text-center max-w-4xl mx-auto px-6">
+                <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium leading-[1.1] mb-8">
+                    Grow daily with<br>
+                    <span class="italic">personalized audio</span> lessons
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                    In your language, voice & learning depth, sourced from books, research<br class="hidden sm:block">
+                    papers & domain experts
+                </p>
+                <button class="px-10 py-4 rounded-full bg-accent text-white font-semibold text-lg hover:bg-accent/90 transition-all hover:scale-105 hover:shadow-lg hover:shadow-accent/25 mb-6">
+                    Get started
+                </button>
+                <p class="text-gray-500 text-sm">
+                    <span class="text-white font-semibold">798,427</span> learners have joined
+                </p>
+                <div class="mt-12 flex flex-col items-center gap-2 text-gray-500 text-xs tracking-widest uppercase">
+                    <span>Scroll</span>
+                    <i class="fas fa-chevron-down animate-bounce"></i>
+                </div>
+            </div>
+
+            <!-- Wave Canvas -->
+            <canvas id="waveCanvas"></canvas>
+        </section>
+
+        <!-- Knowledge Sources Section -->
+        <section class="relative py-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-20">
+                    <h2 class="font-serif text-5xl sm:text-6xl md:text-7xl font-medium reveal">
+                        From the best<br>knowledge sources
+                    </h2>
+                </div>
+
+                <!-- Floating Cards Grid -->
+                <div class="relative h-[700px] md:h-[800px]">
+                    <!-- Card 1: Meeting/Discussion -->
+                    <div class="absolute top-0 left-[5%] md:left-[10%] w-64 md:w-80 reveal hover-card">
+                        <div class="rounded-2xl overflow-hidden bg-card border border-white/5">
+                            <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=250&fit=crop" alt="Discussion" class="w-full h-40 object-cover">
+                            <div class="p-3 flex items-center gap-2">
+                                <div class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center">
+                                    <i class="fas fa-book-open text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Blue knowledge card -->
+                    <div class="absolute top-[5%] right-[10%] md:right-[20%] w-48 reveal hover-card float-2">
+                        <div class="rounded-xl bg-blue-600 p-5 text-white">
+                            <p class="font-semibold text-lg leading-snug">Hormones, Status, and the Decision Dance</p>
+                            <div class="mt-3 w-8 h-8 rounded-full bg-black/20 flex items-center justify-center">
+                                <i class="fas fa-podcast text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: TED Talk style -->
+                    <div class="absolute top-[15%] left-[35%] md:left-[40%] w-72 reveal hover-card float-1">
+                        <div class="rounded-2xl overflow-hidden bg-card border border-white/5">
+                            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&h=220&fit=crop" alt="TED Talk" class="w-full h-36 object-cover">
+                            <div class="p-3">
+                                <div class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center">
+                                    <i class="fas fa-play text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Radical Candor -->
+                    <div class="absolute top-[5%] right-[2%] w-44 reveal hover-card float-3">
+                        <div class="rounded-xl overflow-hidden bg-gradient-to-br from-orange-400 to-red-500 p-4 text-white">
+                            <p class="font-bold text-xl italic">Radical<br>Candor</p>
+                            <div class="mt-4 flex items-center gap-2">
+                                <div class="w-5 h-5 rounded bg-black/20 flex items-center justify-center">
+                                    <i class="fas fa-book text-xs"></i>
+                                </div>
+                                <span class="text-xs font-medium">KIM SCOTT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Quote card -->
+                    <div class="absolute top-[45%] left-[8%] w-80 reveal hover-card float-4">
+                        <div class="rounded-2xl bg-card border border-white/5 p-6">
+                            <i class="fas fa-quote-left text-2xl text-gray-600 mb-3"></i>
+                            <p class="text-xl text-gray-300 leading-relaxed">Knowledge speaks.<br>Wisdom listens.</p>
+                            <p class="mt-4 text-gray-500 text-sm">— Jimi Hendrix</p>
+                            <div class="mt-3 w-6 h-6 rounded-full bg-white/10 flex items-center justify-center">
+                                <i class="fas fa-book-open text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Atomic Habits -->
+                    <div class="absolute bottom-[10%] left-[2%] w-40 reveal hover-card float-1">
+                        <div class="rounded-xl overflow-hidden bg-gradient-to-b from-gray-800 to-gray-900 border border-white/5">
+                            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=300&h=200&fit=crop" alt="Atomic Habits" class="w-full h-32 object-cover opacity-80">
+                            <div class="p-3">
+                                <p class="text-sm font-bold text-yellow-200">Atomic Habits</p>
+                                <p class="text-xs text-gray-400 mt-1">James Clear</p>
+                                <div class="mt-2 w-5 h-5 rounded bg-white/10 flex items-center justify-center">
+                                    <i class="fas fa-book text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Quote card 2 -->
+                    <div class="absolute top-[40%] right-[5%] w-72 reveal hover-card float-2">
+                        <div class="rounded-2xl bg-card border border-white/5 p-5">
+                            <p class="text-gray-400 leading-relaxed">Every pause is part of learning.</p>
+                            <div class="mt-4 flex items-center gap-4 text-gray-500 text-sm">
+                                <span><i class="far fa-comment mr-1"></i> 16</span>
+                                <span><i class="far fa-heart mr-1"></i> 118</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8: Sapiens -->
+                    <div class="absolute bottom-[5%] right-[8%] w-44 reveal hover-card float-3">
+                        <div class="rounded-xl overflow-hidden bg-amber-700 p-4 text-amber-100">
+                            <p class="text-3xl font-serif italic">Sapiens</p>
+                            <div class="mt-3 h-16 bg-amber-800/50 rounded-lg flex items-end justify-center pb-2">
+                                <div class="w-12 h-12 rounded-full bg-amber-600/30"></div>
+                            </div>
+                            <div class="mt-2 flex items-center gap-2">
+                                <div class="w-5 h-5 rounded bg-black/20 flex items-center justify-center">
+                                    <i class="fas fa-book text-xs"></i>
+                                </div>
+                                <span class="text-xs">Yuval Noah Harari</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Center text overlay -->
+                    <div class="absolute top-[35%] left-1/2 -translate-x-1/2 text-center pointer-events-none z-10">
+                        <h3 class="font-serif text-4xl md:text-6xl font-medium text-white/90 reveal">
+                            narrated just for you
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== INTERACTIVE AUDIO PLAYER SECTION ===== -->
+        <section id="interactive-player" class="player-section">
+            <div class="noise-overlay"></div>
+
+            <!-- Background Text Layer -->
+            <div class="bg-text-layer">
+                <p id="bg-text" class="bg-text-content"></p>
+            </div>
+
+            <!-- Vertical Label -->
+            <div class="vertical-label">knowledge flow</div>
+
+            <!-- Center Card -->
+            <div class="player-card-wrapper" style="margin-bottom: 180px;">
+                <div id="player-card" class="player-card">
+                    <div id="card-cover" class="card-cover">
+                        <!-- Cover content injected by JS -->
+                    </div>
+
+                    <div class="card-info">
+                        <div class="sources-row">
+                            <div class="source-avatars">
+                                <div class="source-avatar" style="background: linear-gradient(135deg, #fbbf24, #f59e0b);"></div>
+                                <div class="source-avatar" style="background: linear-gradient(135deg, #60a5fa, #3b82f6);"></div>
+                                <div class="source-avatar" style="background: linear-gradient(135deg, #a78bfa, #7c3aed);"></div>
+                            </div>
+                            <span id="source-count" class="source-count">23 sources</span>
+                        </div>
+
+                        <div class="player-controls">
+                            <button class="play-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+                            </button>
+                            <span class="time-display">0:00</span>
+                            <div class="progress-bar">
+                                <div id="progress-fill" class="progress-fill"></div>
+                            </div>
+                            <span id="time-total" class="time-display">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic Buttons -->
+            <div class="topic-buttons">
+                <button class="topic-btn active" data-index="0" onclick="switchTopic(0)">The Thoughts of Friedrich Nietzsche</button>
+                <button class="topic-btn" data-index="1" onclick="switchTopic(1)">The Charisma Myth</button>
+                <button class="topic-btn" data-index="2" onclick="switchTopic(2)">The 5 Love Languages</button>
+                <button class="topic-btn" data-index="3" onclick="switchTopic(3)">Control Your Dopamine</button>
+                <button class="topic-btn" data-index="4" onclick="switchTopic(4)">The Mental Habits of Effective Leaders</button>
+            </div>
+
+            <button class="get-started-btn">Get started</button>
+        </section>
+
+        <!-- Pebble Hardware Hero Section (Custom) -->
+        <section class="relative py-32 overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark via-surface to-dark"></div>
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="reveal">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-accent-light text-sm font-medium mb-6">
+                            <i class="fas fa-microchip"></i>
+                            New Hardware Ecosystem
+                        </div>
+                        <h2 class="font-serif text-5xl md:text-6xl font-medium mb-6 leading-tight">
+                            LoreLume Pebble<br>
+                            <span class="italic text-accent-light">Flow Companion</span>
+                        </h2>
+                        <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                            A screen-free portable AI voice micro-learning hardware. A pebble-sized pocket controller + bone conduction ear clips,
+                            enabling bidirectional learning interaction with AI through pure voice and physical buttons. Eyes off the screen, present in the real world, mind in deep thought.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <button class="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-all hover:scale-105">
+                                Discover Pebble
+                            </button>
+                            <button class="px-8 py-3 rounded-full glass text-white font-medium hover:bg-white/5 transition-all">
+                                Watch Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative flex justify-center reveal">
+                        <!-- Pebble Device Mockup -->
+                        <div class="relative">
+                            <div class="pebble-device w-64 h-64 flex items-center justify-center relative">
+                                <div class="absolute inset-4 rounded-full border border-white/10"></div>
+                                <div class="absolute inset-8 rounded-full border border-white/5"></div>
+                                <div class="text-center">
+                                    <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-accent/20 flex items-center justify-center">
+                                        <i class="fas fa-wave-square text-accent text-2xl"></i>
+                                    </div>
+                                    <div class="flex justify-center gap-1 mb-2">
+                                        <div class="w-1 bg-accent rounded-full audio-bar" style="animation-delay: 0s"></div>
+                                        <div class="w-1 bg-accent rounded-full audio-bar" style="animation-delay: 0.1s"></div>
+                                        <div class="w-1 bg-accent rounded-full audio-bar" style="animation-delay: 0.2s"></div>
+                                        <div class="w-1 bg-accent rounded-full audio-bar" style="animation-delay: 0.3s"></div>
+                                        <div class="w-1 bg-accent rounded-full audio-bar" style="animation-delay: 0.4s"></div>
+                                    </div>
+                                    <p class="text-xs text-gray-400">Listening...</p>
+                                </div>
+                            </div>
+                            <!-- Orbiting elements -->
+                            <div class="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-blue-500/20 backdrop-blur-xl border border-blue-400/30 flex items-center justify-center float-1">
+                                <i class="fas fa-brain text-blue-400 text-sm"></i>
+                            </div>
+                            <div class="absolute -bottom-2 -left-8 w-10 h-10 rounded-full bg-purple-500/20 backdrop-blur-xl border border-purple-400/30 flex items-center justify-center float-2">
+                                <i class="fas fa-lightbulb text-purple-400 text-xs"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- On Demand Section -->
+        <section class="relative py-32 overflow-hidden">
+            <!-- Stars background -->
+            <div class="absolute inset-0" id="starsContainer"></div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="reveal">
+                        <h2 class="font-serif text-5xl md:text-6xl font-medium mb-6 leading-tight">
+                            Listen to knowledge,<br>on demand
+                        </h2>
+                        <p class="text-gray-400 text-lg mb-8">You set the intent. We deliver the rest.</p>
+                        <button class="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-all hover:scale-105">
+                            Create it now
+                        </button>
+                    </div>
+                    <div class="relative h-[400px] reveal">
+                        <!-- Floating book cards -->
+                        <div class="absolute top-0 left-[10%] w-36 float-1">
+                            <div class="rounded-lg bg-blue-600 p-4 text-white shadow-2xl">
+                                <p class="text-xs font-bold leading-tight">Fading Love: The Science of Rekindling</p>
+                                <div class="mt-2 text-2xl">🔥</div>
+                            </div>
+                        </div>
+                        <div class="absolute top-[20%] right-[5%] w-36 float-2">
+                            <div class="rounded-lg bg-orange-600 p-4 text-white shadow-2xl">
+                                <p class="text-xs font-bold leading-tight">Love's Triple Helix: Desire, Romance, Attachment</p>
+                                <div class="mt-2 text-2xl">🧬</div>
+                            </div>
+                        </div>
+                        <div class="absolute top-[40%] left-[20%] w-40 float-3">
+                            <div class="rounded-lg bg-orange-500 p-5 text-white shadow-2xl">
+                                <p class="text-lg font-bold leading-tight">The Science of Healthy Love</p>
+                                <div class="mt-3 text-3xl">❤️</div>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-[10%] left-[5%] w-36 float-4">
+                            <div class="rounded-lg bg-blue-700 p-4 text-white shadow-2xl">
+                                <p class="text-xs font-bold leading-tight">Hard Things Grow Your Brain</p>
+                                <div class="mt-2 text-2xl">🧠</div>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-[5%] right-[15%] w-36 float-1">
+                            <div class="rounded-lg bg-teal-600 p-4 text-white shadow-2xl">
+                                <p class="text-xs font-bold leading-tight">The Science of Lasting Love</p>
+                                <div class="mt-2 text-2xl">🧪</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Voice Section -->
+        <section class="relative py-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="relative h-[400px] reveal">
+                        <!-- Voice selector mockup -->
+                        <div class="absolute top-[10%] left-[10%] glass-strong rounded-2xl p-6 w-64 float-1">
+                            <p class="text-gray-400 text-sm mb-4">The mentor</p>
+                            <p class="text-gray-400 text-sm mb-4">The storyteller</p>
+                            <p class="text-gray-400 text-sm mb-6">The big sister</p>
+                            <div class="flex flex-wrap gap-2">
+                                <button class="px-3 py-1.5 rounded-full bg-white/10 text-xs flex items-center gap-1 hover:bg-white/20 transition-colors">
+                                    Eli <i class="fas fa-play text-[10px]"></i>
+                                </button>
+                                <button class="px-3 py-1.5 rounded-full bg-white text-black text-xs flex items-center gap-1">
+                                    Nia <i class="fas fa-play text-[10px]"></i>
+                                </button>
+                                <button class="px-3 py-1.5 rounded-full bg-white/10 text-xs flex items-center gap-1 hover:bg-white/20 transition-colors">
+                                    Miles <i class="fas fa-play text-[10px]"></i>
+                                </button>
+                                <button class="px-3 py-1.5 rounded-full bg-white/10 text-xs flex items-center gap-1 hover:bg-white/20 transition-colors">
+                                    Blythe <i class="fas fa-play text-[10px]"></i>
+                                </button>
+                                <button class="px-3 py-1.5 rounded-full bg-white/10 text-xs flex items-center gap-1 hover:bg-white/20 transition-colors">
+                                    Lena <i class="fas fa-play text-[10px]"></i>
+                                </button>
+                                <button class="px-3 py-1.5 rounded-full bg-white/10 text-xs flex items-center gap-1 hover:bg-white/20 transition-colors">
+                                    Jackson <i class="fas fa-play text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center lg:text-left reveal">
+                        <button class="px-6 py-2 rounded-full bg-white text-black text-sm font-medium mb-8 hover:bg-gray-100 transition-colors">
+                            Pick your voice
+                        </button>
+                        <h2 class="font-serif text-5xl md:text-6xl font-medium leading-tight">
+                            Hear it in a<br>voice you love
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Style Section -->
+        <section class="relative py-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="text-center lg:text-left reveal">
+                        <h2 class="font-serif text-5xl md:text-6xl font-medium mb-6 leading-tight">
+                            Learn the way<br>you want
+                        </h2>
+                        <p class="text-gray-400 text-lg mb-8">
+                            Storytelling or fact, skim or dive<br class="hidden sm:block">
+                            deep, learning that fits you.
+                        </p>
+                        <button class="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-all hover:scale-105">
+                            Explore your way
+                        </button>
+                    </div>
+                    <div class="flex justify-center reveal">
+                        <div class="glass-strong rounded-3xl p-8 w-80">
+                            <div class="bg-purple-900/30 border border-purple-500/20 rounded-2xl p-6">
+                                <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center mb-4">
+                                    <i class="fas fa-user-graduate text-purple-400"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold mb-2">Quick</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed">The fastest and easiest way to get key insights.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Talk to Audio Section -->
+        <section class="relative py-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="relative h-[400px] flex items-center justify-center reveal">
+                        <!-- Blurred orbs -->
+                        <div class="absolute w-48 h-48 bg-cyan-400 orb" style="left: 20%; top: 20%;"></div>
+                        <div class="absolute w-48 h-48 bg-blue-500 orb" style="right: 20%; bottom: 20%;"></div>
+                        <div class="relative z-10 glass-strong rounded-3xl p-8 w-72">
+                            <p class="text-right text-sm text-gray-300 mb-8">Why do new ideas sound wrong to p</p>
+                            <p class="text-center text-2xl font-serif italic text-white/80">You</p>
+                        </div>
+                    </div>
+                    <div class="reveal">
+                        <h2 class="font-serif text-5xl md:text-6xl font-medium mb-6 leading-tight">
+                            Talk to the audio,<br>whenever you need
+                        </h2>
+                        <p class="text-gray-400 text-lg mb-8">
+                            Most learning platforms teach, we listen.
+                        </p>
+                        <button class="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-all hover:scale-105">
+                            Start the talk
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mindspace Section -->
+        <section class="relative py-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="text-center lg:text-left reveal">
+                        <h2 class="font-serif text-5xl md:text-6xl font-medium mb-6 leading-tight">
+                            Turn every "aha"<br>moment into<br>your Mindspace
+                        </h2>
+                        <p class="text-gray-400 text-lg mb-8">
+                            Journals and memories you own,<br class="hidden sm:block">
+                            grow, and evolve.
+                        </p>
+                        <button class="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-all hover:scale-105">
+                            Build your space
+                        </button>
+                    </div>
+                    <div class="flex justify-center reveal">
+                        <div class="glass-strong rounded-3xl p-12 w-80 h-80 flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-transparent"></div>
+                            <div class="relative">
+                                <svg class="w-16 h-16 text-gray-600 spinner-ring" viewBox="0 0 50 50">
+                                    <circle cx="25" cy="25" r="20" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="60 40" opacity="0.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pebble Features (Custom Section) -->
+        <section class="relative py-32 overflow-hidden bg-surface/30">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-20 reveal">
+                    <h2 class="font-serif text-4xl md:text-5xl font-medium mb-4">
+                        One-Click Blind Control, <span class="italic">Flow</span> Uninterrupted
+                    </h2>
+                    <p class="text-gray-400 text-lg">Simplifies the complex "pull out phone - unlock - tap - type" process into a one-handed physical press</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="glass rounded-2xl p-8 hover-card reveal">
+                        <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-6">
+                            <i class="fas fa-fingerprint text-accent text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Haptic Feedback</h3>
+                        <p class="text-gray-400 leading-relaxed">A pebble-sized pocket controller supporting gestures and physical haptic feedback. No need to look — single-hand blind operation.</p>
+                    </div>
+                    <div class="glass rounded-2xl p-8 hover-card reveal">
+                        <div class="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center mb-6">
+                            <i class="fas fa-bone text-blue-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Bone Conduction Ear Clips</h3>
+                        <p class="text-gray-400 leading-relaxed">Open-ear bone conduction ear clip module with a non-in-ear design. Stay aware of your surroundings while running or commuting — safe yet immersive.</p>
+                    </div>
+                    <div class="glass rounded-2xl p-8 hover-card reveal">
+                        <div class="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-6">
+                            <i class="fas fa-cloud-upload-alt text-green-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">30-Second Backtrack</h3>
+                        <p class="text-gray-400 leading-relaxed">Heard a key insight? One click marks and transcribes the past 30 seconds of AI audio into notes, auto-syncing to your cloud Mindspace.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Download CTA -->
+        <section class="relative py-24 overflow-hidden">
+            <div class="download-showcase">
+                    <div class="download-showcase-grid">
+                        <!-- Left Content -->
+                        <div class="download-showcase-copy">
+                            <p class="download-rating-label">1.5K RATINGS</p>
+                            <p class="download-rating-score">4.7</p>
+                            <div class="download-stars flex items-center justify-center gap-1 mt-3">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <h2 class="download-showcase-title">
+                                Start your learning<br>journey, now
+                            </h2>
+                            <button class="download-showcase-button">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                Get it on iOS or Android
+                            </button>
+                        </div>
+
+                        <!-- Right - iPhone Mockup -->
+                        <div class="download-phone-stage">
+                            <!-- iPhone Frame -->
+                            <div class="download-phone">
+                                <!-- Phone bezel -->
+                                <div style="background: linear-gradient(145deg, #3a3a3c 0%, #1c1c1e 50%, #2c2c2e 100%); border-radius: 48px; padding: 10px; box-shadow: 0 25px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.1);">
+                                    <!-- Phone inner frame -->
+                                    <div style="background: #000; border-radius: 40px; overflow: hidden; position: relative;">
+                                        <!-- Camera and sensor -->
+                                        <div style="position: absolute; top: 17px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 8px; z-index: 50;">
+                                            <div style="width: 48px; height: 8px; border: 2px solid #8a8a91; border-radius: 8px; background: #252532;"></div>
+                                            <div style="width: 11px; height: 11px; border: 2px solid #8a8a91; border-radius: 50%; background: #252532;"></div>
+                                        </div>
+
+                                        <!-- Screen Content -->
+                                        <div style="background: linear-gradient(180deg, #1e1e2e 0%, #161622 30%, #0f0f1a 100%); min-height: 560px; padding: 50px 16px 20px; position: relative;">
+                                            <!-- Status Bar -->
+                                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; padding: 0 4px;">
+                                                <span style="color: white; font-size: 15px; font-weight: 600; font-family: 'Inter', sans-serif;">9:41</span>
+                                                <div style="display: flex; align-items: center; gap: 4px;">
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 3C7.46 3 3.34 4.78.29 7.67c-.18.18-.29.43-.29.71 0 .28.11.53.29.71l11 11c.39.39 1.02.39 1.41 0l11-11c.18-.18.29-.43.29-.71 0-.28-.11.53-.29-.71C20.66 4.78 16.54 3 12 3z"/></svg>
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
+                                                    <svg width="20" height="12" viewBox="0 0 24 12" fill="none"><rect x="1" y="1" width="20" height="10" rx="3" stroke="white" stroke-width="1.5" fill="none"/><rect x="3" y="3" width="14" height="6" rx="1.5" fill="white"/></svg>
+                                                </div>
+                                            </div>
+
+                                            <!-- Header -->
+                                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                                                <h3 style="color: white; font-size: 22px; font-family: 'Playfair Display', serif; font-weight: 500;">Hey, Katherine</h3>
+                                                <div style="display: flex; gap: 12px;">
+                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><rect x="3" y="8" width="18" height="4" rx="1"/><rect x="5" y="4" width="14" height="4" rx="1"/><rect x="7" y="12" width="10" height="4" rx="1"/><path d="M8 16v4M12 16v4M16 16v4"/></svg>
+                                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+                                                </div>
+                                            </div>
+
+                                            <!-- Learning Plan Card -->
+                                            <div style="margin-bottom: 16px;">
+                                                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                                                    <div style="width: 18px; height: 18px; background: #fbbf24; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="3"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                                    </div>
+                                                    <span style="color: white; font-size: 14px; font-family: 'Playfair Display', serif;">Start with a learning plan</span>
+                                                </div>
+
+                                                <div style="background: linear-gradient(135deg, #2d2d44 0%, #252538 100%); border-radius: 16px; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; border: 1px solid rgba(255,255,255,0.05);">
+                                                    <div>
+                                                        <p style="color: white; font-size: 15px; font-weight: 600; margin-bottom: 4px;">Set Your Plan</p>
+                                                        <p style="color: #8b8b9e; font-size: 12px; line-height: 1.4;">Tell us what you want to<br>learn, we'll do the rest</p>
+                                                    </div>
+                                                    <button style="background: white; color: black; border: none; border-radius: 20px; padding: 8px 16px; font-size: 12px; font-weight: 600; display: flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap;">
+                                                        <span style="color: #fbbf24;">✦</span> Get started
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Discover Section -->
+                                            <div style="margin-bottom: 16px;">
+                                                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e879f9" stroke-width="2"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+                                                    <span style="color: white; font-size: 14px; font-family: 'Playfair Display', serif;">Discover something new</span>
+                                                </div>
+                                                <button style="width: 100%; background: white; color: black; border: none; border-radius: 24px; padding: 12px; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 6px; cursor: pointer;">
+                                                    <span style="color: #fbbf24;">✦</span> Create my own
+                                                </button>
+                                            </div>
+
+                                            <!-- Picked for you -->
+                                            <div>
+                                                <div style="display: inline-block; background: rgba(139, 92, 246, 0.2); color: #c4b5fd; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 12px; margin-bottom: 10px;">Picked for you</div>
+
+                                                <div style="background: linear-gradient(135deg, #252538 0%, #1e1e30 100%); border-radius: 16px; padding: 12px; display: flex; gap: 12px; align-items: flex-start; border: 1px solid rgba(255,255,255,0.05);">
+                                                    <!-- Book Cover -->
+                                                    <div style="width: 50px; height: 65px; border-radius: 6px; overflow: hidden; flex-shrink: 0; background: linear-gradient(135deg, #065f46 0%, #047857 100%); position: relative;">
+                                                        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 4px;">
+                                                            <p style="color: #fbbf24; font-size: 7px; font-weight: bold; text-align: center; line-height: 1.1;">The<br>Lost<br>Symbol</p>
+                                                            <div style="width: 16px; height: 16px; background: #fbbf24; border-radius: 50%; margin-top: 2px; display: flex; align-items: center; justify-content: center;">
+                                                                <svg width="8" height="8" viewBox="0 0 24 24" fill="#065f46"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                                            </div>
+                                                        </div>
+                                                        <div style="position: absolute; bottom: 4px; left: 4px; background: rgba(255,255,255,0.9); color: #065f46; font-size: 7px; font-weight: 800; padding: 1px 4px; border-radius: 2px;">FREE</div>
+                                                    </div>
+
+                                                    <div style="flex: 1; min-width: 0;">
+                                                        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                                                            <div>
+                                                                <p style="color: white; font-size: 13px; font-weight: 600; line-height: 1.3; margin-bottom: 2px;">Your Strategy Needs a Strategy</p>
+                                                                <p style="color: #8b8b9e; font-size: 11px;">Knut Haanaes &</p>
+                                                                <p style="color: #8b8b9e; font-size: 11px;">Janmejaya Sinha Martin</p>
+                                                            </div>
+                                                            <div style="display: flex; gap: 2px; margin-left: 4px;">
+                                                                <div style="width: 3px; height: 3px; background: #8b8b9e; border-radius: 50%;"></div>
+                                                                <div style="width: 3px; height: 3px; background: #8b8b9e; border-radius: 50%;"></div>
+                                                                <div style="width: 3px; height: 3px; background: #8b8b9e; border-radius: 50%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Play Button -->
+                                                    <button style="width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; flex-shrink: 0; cursor: pointer; margin-top: 8px;">
+                                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+                                                    </button>
+                                                </div>
+
+                                                <!-- Why this card -->
+                                                <div style="background: linear-gradient(135deg, #1e1e30 0%, #181825 100%); border-radius: 12px; padding: 10px 12px; margin-top: 8px; display: flex; align-items: center; gap: 8px; border: 1px solid rgba(255,255,255,0.03);">
+                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                                    <span style="color: white; font-size: 12px; font-weight: 500;">Why this</span>
+                                                </div>
+                                                <p style="color: #6b6b7e; font-size: 11px; margin-top: 6px; padding-left: 4px;">"The First 90 Days" by Michael D.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Side buttons (volume/power) -->
+                                <div style="position: absolute; right: -3px; top: 100px; width: 3px; height: 60px; background: linear-gradient(180deg, #4a4a4c 0%, #2a2a2c 100%); border-radius: 0 2px 2px 0;"></div>
+                                <div style="position: absolute; left: -3px; top: 90px; width: 3px; height: 30px; background: linear-gradient(180deg, #4a4a4c 0%, #2a2a2c 100%); border-radius: 2px 0 0 2px;"></div>
+                                <div style="position: absolute; left: -3px; top: 130px; width: 3px; height: 30px; background: linear-gradient(180deg, #4a4a4c 0%, #2a2a2c 100%); border-radius: 2px 0 0 2px;"></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Footer Links -->
+        <footer class="relative pt-24 pb-12">
+            <div class="max-w-7xl mx-auto px-6">
+                <!-- Top section -->
+                <div class="flex items-center gap-4 mb-16">
+                    <svg width="42" height="42" viewBox="0 0 40 40" fill="none" aria-label="LoreLume logo">
+                        <path d="M20.2 2.5C30.7 2.5 37.7 9.8 37.5 19.8C37.3 30.2 29.9 37.4 19.5 37.5C9.2 37.6 2.5 30.6 2.5 20.2C2.5 10.1 9.8 2.5 20.2 2.5Z" fill="url(#logoGrad2)"/>
+                        <path d="M8.5 21C10.7 15.8 12.9 15.8 15.1 21C17.3 26.2 19.5 26.2 21.7 21C23.9 15.8 26.1 15.8 28.3 21C30 25 31.7 25.8 33.2 23.4" stroke="white" stroke-width="2.35" stroke-linecap="round"/>
+                        <path d="M11.5 12.8C16.1 9.1 23.7 8.8 29.1 13" stroke="rgba(255,255,255,0.58)" stroke-width="1.4" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="logoGrad2" x1="5" y1="4" x2="36" y2="37">
+                                <stop stop-color="#f2b66d"/>
+                                <stop offset="0.48" stop-color="#a56bf2"/>
+                                <stop offset="1" stop-color="#6157e8"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="text-2xl font-semibold tracking-[-0.02em]">LoreLume</span>
+                </div>
+
+                <div class="mb-8">
+                    <p class="text-gray-400 text-lg mb-4">Learn Anything, Personalized</p>
+                    <div class="flex items-center gap-4">
+                        <i class="fab fa-discord text-gray-400 text-xl"></i>
+                        <i class="fab fa-linkedin text-gray-400 text-xl"></i>
+                    </div>
+                </div>
+
+                <!-- Link Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+                    <div>
+                        <h4 class="text-gray-500 text-sm mb-4">Featured book summaries</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Crucial Conversations</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">The Perfect Marriage</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Into the Wild</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Never Split the Difference</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Attached</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Good to Great</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Say Nothing</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-gray-500 text-sm mb-4">Trending categories</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Self Help</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Communication Skill</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Relationship</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Mindfulness</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Philosophy</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Inspiration</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Productivity</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-gray-500 text-sm mb-4">Celebrities' reading list</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Elon Musk</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Charlie Kirk</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Bill Gates</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Steve Jobs</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Andrew Huberman</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Joe Rogan</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Jordan Peterson</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-gray-500 text-sm mb-4">Award winning collection</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Pulitzer Prize</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">National Book Award</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Goodreads Choice Awards</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Nobel Prize in Literature</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">New York Times</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Caldecott Medal</a></li>
+                            <li><a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Nebula Award</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Info links -->
+                <div class="flex flex-wrap gap-6 mb-20 text-sm">
+                    <span class="text-gray-500 w-full mb-2">Information</span>
+                    <a href="#" class="text-white hover:text-accent-light transition-colors flex items-center gap-1">About Us <i class="fas fa-arrow-up-right text-xs"></i></a>
+                    <a href="#" class="text-white hover:text-accent-light transition-colors flex items-center gap-1">Pricing <i class="fas fa-arrow-up-right text-xs"></i></a>
+                    <a href="#" class="text-white hover:text-accent-light transition-colors flex items-center gap-1">FAQ <i class="fas fa-arrow-up-right text-xs"></i></a>
+                    <a href="#" class="text-white hover:text-accent-light transition-colors flex items-center gap-1">Blog <i class="fas fa-arrow-up-right text-xs"></i></a>
+                    <a href="#" class="text-white hover:text-accent-light transition-colors flex items-center gap-1">Career <i class="fas fa-arrow-up-right text-xs"></i></a>
+                    <a href="#" class="text-white hover:text-accent-light transition-colors flex items-center gap-1">Partnerships <i class="fas fa-arrow-up-right text-xs"></i></a>
+                    <a href="#" class="text-white hover:text-accent-light transition-colors flex items-center gap-1">Ambassador Program <i class="fas fa-arrow-up-right text-xs"></i></a>
+                    <a href="#" class="text-white hover:text-accent-light transition-colors flex items-center gap-1">Directory <i class="fas fa-arrow-up-right text-xs"></i></a>
+                </div>
+
+                <!-- Giant Logo -->
+                <div class="footer-logo font-serif italic font-bold text-white mb-12 select-none">
+                    LoreLume
+                </div>
+
+                <!-- Bottom bar -->
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8 border-t border-white/5">
+                    <p class="text-gray-500 text-sm">© 2026 LoreLume</p>
+                    <div class="flex gap-8">
+                        <a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Term of Use</a>
+                        <a href="#" class="text-white hover:text-accent-light transition-colors text-sm">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // ===== INTERACTIVE PLAYER DATA =====
+        const topics = [
+            {
+                title: "The Thoughts of Friedrich Nietzsche",
+                titleZh: "弗里德里希·尼采的思想",
+                sources: 23,
+                time: "0:00",
+                coverHtml: `
+                    <div class="cover-nietzsche w-full h-full">
+                        <svg class="w-28 h-28 md:w-32 md:h-32" viewBox="0 0 120 120" fill="none">
+                            <circle cx="60" cy="45" r="28" stroke="white" stroke-width="2.5" fill="none"/>
+                            <path d="M45 38 Q45 28 55 28 Q65 28 65 38 Q65 45 55 45 Q45 45 45 38" stroke="white" stroke-width="2" fill="none"/>
+                            <path d="M55 45 L55 58 M48 52 Q42 58 48 64 M62 52 Q68 58 62 64" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <path d="M50 70 Q60 78 70 70" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <path d="M38 42 Q35 35 38 28 M82 42 Q85 35 82 28" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                            <path d="M35 50 Q30 55 32 62 M85 50 Q90 55 88 62" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                        </svg>
+                        <p class="cover-title">The Thoughts of<br>Friedrich Nietzsche</p>
+                    </div>
+                `,
+                bgText: "Freedom emerges gently between doubt and desire. It begins quietly, before the mind has time to explain itself. You stand where wonder once lived, and certainty starts to dissolve. New strength arises only when the illusion finally ends.",
+                highlights: ["Freedom", "begins", "where", "certainty", "ends"],
+                bgTextZh: "自由在怀疑与渴望之间悄然浮现。它静静开始，早于心智为自己寻找解释。你站在好奇曾经栖居之处，笃定开始消融。唯有幻象最终落幕，新的力量才会升起。",
+                highlightsZh: ["自由", "开始", "之处", "笃定", "落幕"]
+            },
+            {
+                title: "The Charisma Myth",
+                titleZh: "魅力神话",
+                sources: 22,
+                time: "0:00",
+                coverHtml: `
+                    <div class="cover-charisma w-full h-full">
+                        <p class="cover-title">The<br>Charisma<br>Myth</p>
+                        <svg class="feather-icon" viewBox="0 0 100 140" fill="none">
+                            <path d="M50 130 Q50 100 50 80 Q30 60 20 40 Q25 20 50 10 Q75 20 80 40 Q70 60 50 80" fill="url(#featherGrad)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+                            <path d="M50 130 L50 80" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+                            <defs>
+                                <linearGradient id="featherGrad" x1="0" y1="0" x2="100" y2="140">
+                                    <stop offset="0%" stop-color="#2dd4bf"/>
+                                    <stop offset="50%" stop-color="#0ea5e9"/>
+                                    <stop offset="100%" stop-color="#6366f1"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                `,
+                bgText: "Quiet strength isn't about performance, but steady awareness. Real confidence grows when you stop trying to prove it. In still moments, you become the presence others remember. True influence comes from who you are when it speaks the loudest.",
+                highlights: ["Quiet", "confidence", "you", "speaks", "loudest"],
+                bgTextZh: "安静的力量不在于表现，而在于稳定的觉察。当你不再试图证明自己，真正的自信便开始生长。在静止的时刻，你会成为他人记得的存在。真正的影响力，来自最响亮地表达你的那个真实自我。",
+                highlightsZh: ["安静", "自信", "你", "表达", "真实自我"]
+            },
+            {
+                title: "The 5 Love Languages",
+                titleZh: "爱的五种语言",
+                sources: 16,
+                time: "0:00",
+                coverHtml: `
+                    <div class="cover-love w-full h-full">
+                        <p class="cover-title">The<br>5 Love<br>Languages</p>
+                        <div class="heart-container">
+                            <div class="heart-left"></div>
+                            <div class="heart-right"></div>
+                        </div>
+                    </div>
+                `,
+                bgText: "Love waits quietly when the world feels distant. It speaks not through words, but through small acts of care. Moments open when you stop rushing and simply soften as you begin to understand. Meaning grows when hearts align, and you truly listen.",
+                highlights: ["Love", "speaks", "when", "you", "listen"],
+                bgTextZh: "当世界显得遥远，爱会静静等待。它不通过言语，而通过细微的关怀来表达。当你不再匆忙、开始理解并柔软下来，时光便会舒展。心意相通、真正倾听时，意义由此生长。",
+                highlightsZh: ["爱", "表达", "当", "你", "倾听"]
+            },
+            {
+                title: "Control Your Dopamine",
+                titleZh: "掌控你的多巴胺",
+                sources: 21,
+                time: "0:00",
+                coverHtml: `
+                    <div class="cover-dopamine w-full h-full">
+                        <svg class="brain-icon" viewBox="0 0 60 60" fill="none">
+                            <path d="M30 8 C20 8 12 15 12 25 C12 35 20 42 30 42 C40 42 48 35 48 25 C48 15 40 8 30 8Z" stroke="#ef4444" stroke-width="2" fill="none"/>
+                            <path d="M18 20 Q22 16 26 20 M34 20 Q38 16 42 20 M22 28 Q26 24 30 28 M30 28 Q34 24 38 28 M24 36 Q30 32 36 36" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                            <circle cx="30" cy="48" r="4" stroke="#ef4444" stroke-width="2" fill="none"/>
+                            <path d="M26 52 L26 58 M34 52 L34 58 M30 52 L30 56" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                            <path d="M42 12 L52 4 L56 8 L48 16" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M46 6 L50 10 M48 8 L52 12" stroke="#ef4444" stroke-width="1" fill="none"/>
+                        </svg>
+                        <p class="cover-title">CONTROL<br>YOUR<br>DOPAMINE</p>
+                        <p class="cover-subtitle">FOR MOTIVATION & FOCUS</p>
+                    </div>
+                `,
+                bgText: "The circuits depend on prediction, reward and expectation. Motivation arises when the brain learns to trust the dopamine system. Attention stabilizes through feedback loops, and emotional balance maintains clarity. Master chemistry, and the mind begins to master itself.",
+                highlights: ["depend on", "Motivation", "dopamine", "balance"],
+                bgTextZh: "神经回路依赖预测、奖励与期待。当大脑学会信任多巴胺系统，动力便会出现。注意力通过反馈回路趋于稳定，情绪平衡则维持清晰。掌握化学机制，心智便开始掌控自身。",
+                highlightsZh: ["依赖", "动力", "多巴胺", "平衡"]
+            },
+            {
+                title: "The Mental Habits of Effective Leaders",
+                titleZh: "高效领导者的思维习惯",
+                sources: 19,
+                time: "1:00",
+                coverHtml: `
+                    <div class="cover-leaders w-full h-full">
+                        <p class="cover-title">The Mental Habits of Effective Leaders</p>
+                        <svg class="brain-gear" viewBox="0 0 100 100" fill="none">
+                            <path d="M50 20 C35 20 25 30 25 45 C25 60 35 70 50 70 C65 70 75 60 75 45 C75 30 65 20 50 20Z" stroke="#f472b6" stroke-width="2.5" fill="none"/>
+                            <path d="M35 35 Q40 30 45 35 M55 35 Q60 30 65 35 M40 50 Q45 45 50 50 M50 50 Q55 45 60 50 M42 58 Q50 52 58 58" stroke="#f472b6" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                            <circle cx="50" cy="45" r="8" stroke="#f472b6" stroke-width="2" fill="none"/>
+                            <circle cx="50" cy="45" r="3" fill="#f472b6"/>
+                            <path d="M50 12 L50 16 M50 74 L50 78 M20 45 L24 45 M76 45 L80 45 M28 23 L31 26 M69 64 L72 67 M72 23 L69 26 M31 64 L28 67" stroke="#f472b6" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="50" cy="12" r="2" fill="#f472b6"/>
+                            <circle cx="50" cy="78" r="2" fill="#f472b6"/>
+                            <circle cx="20" cy="45" r="2" fill="#f472b6"/>
+                            <circle cx="80" cy="45" r="2" fill="#f472b6"/>
+                        </svg>
+                    </div>
+                `,
+                bgText: "Growth follows patience more than ambition. Clarity begins in pause—before the mind's noise can settle. And true reflection guides every step before direction turns to motion. Lasting progress emerges only where discipline meets action.",
+                highlights: ["Clarity", "reflection", "before", "action"],
+                bgTextZh: "成长更多追随耐心，而非野心。清晰始于停顿——在心中的喧嚣沉淀之前。真正的反思指引每一步，先于方向化为行动。唯有自律与行动相遇，持久的进步才会出现。",
+                highlightsZh: ["清晰", "反思", "之前", "行动"]
+            }
+        ];
+
+        // ===== BILINGUAL SITE CONTENT =====
+        const zhTranslations = {
+            "Community Content": "社区内容",
+            "Learning Plans": "学习计划",
+            "Learning Tools": "学习工具",
+            "Resources": "资源",
+            "Send a Gift": "赠送礼物",
+            "Log In": "登录",
+            "Sign Up": "注册",
+            "Grow daily with": "每天进步，尽在",
+            "personalized audio": "个性化音频",
+            "lessons": "课程",
+            "In your language, voice & learning depth, sourced from books, research": "用你的语言、喜欢的声音和合适的学习深度，内容源自书籍、研究",
+            "papers & domain experts": "论文与领域专家",
+            "Get started": "立即开始",
+            "learners have joined": "位学习者已加入",
+            "Scroll": "向下滚动",
+            "From the best": "汇集最优质的",
+            "knowledge sources": "知识来源",
+            "Hormones, Status, and the Decision Dance": "激素、地位与决策之舞",
+            "Radical": "彻底",
+            "Candor": "坦率",
+            "Knowledge speaks.": "知识在诉说。",
+            "Wisdom listens.": "智慧在倾听。",
+            "Atomic Habits": "原子习惯",
+            "James Clear": "詹姆斯·克利尔",
+            "Every pause is": "每一次停顿都是",
+            "part of learning.": "学习的一部分。",
+            "Every pause is part of learning.": "每一次停顿都是学习的一部分。",
+            "Sapiens": "人类简史",
+            "Yuval Noah Harari": "尤瓦尔·赫拉利",
+            "narrated just for you": "为你量身讲述",
+            "knowledge flow": "知识流",
+            "23 sources": "23 个来源",
+            "The Thoughts of Friedrich Nietzsche": "弗里德里希·尼采的思想",
+            "The Charisma Myth": "魅力神话",
+            "The 5 Love Languages": "爱的五种语言",
+            "Control Your Dopamine": "掌控你的多巴胺",
+            "The Mental Habits of Effective Leaders": "高效领导者的思维习惯",
+            "The": "",
+            "Charisma": "魅力",
+            "Myth": "神话",
+            "5 Love": "爱的五种",
+            "Languages": "语言",
+            "CONTROL": "掌控",
+            "YOUR": "你的",
+            "DOPAMINE": "多巴胺",
+            "FOR MOTIVATION & FOCUS": "提升动力与专注",
+            "New Hardware Ecosystem": "全新硬件生态",
+            "Flow Companion": "随行学习伙伴",
+            "A screen-free portable AI voice micro-learning hardware. A pebble-sized pocket controller + bone conduction ear clips, enabling bidirectional learning interaction with AI through pure voice and physical buttons. Eyes off the screen, present in the real world, mind in deep thought.": "一款无需屏幕的便携式 AI 语音微学习设备。鹅卵石大小的口袋控制器搭配骨传导耳夹，通过纯语音和实体按键与 AI 双向互动学习。双眼离开屏幕，身处真实世界，思绪沉浸其中。",
+            "Discover Pebble": "了解 Pebble",
+            "Watch Demo": "观看演示",
+            "Listening...": "正在聆听……",
+            "Listen to knowledge,": "随时聆听知识，",
+            "on demand": "按需即享",
+            "You set the intent. We deliver the rest.": "你设定目标，其余交给我们。",
+            "Create it now": "立即创建",
+            "Fading Love: The Science of Rekindling": "渐逝的爱：重燃关系的科学",
+            "Love's Triple Helix: Desire, Romance, Attachment": "爱的三重螺旋：欲望、浪漫与依恋",
+            "The Science of Healthy Love": "健康之爱的科学",
+            "Hard Things Grow Your Brain": "困难让大脑成长",
+            "The Science of Lasting Love": "长久之爱的科学",
+            "The mentor": "导师型",
+            "The storyteller": "故事讲述者",
+            "The big sister": "知心姐姐",
+            "Pick your voice": "选择你喜欢的声音",
+            "Hear it in a": "聆听知识，用你",
+            "voice you love": "喜欢的声音",
+            "Learn the way": "用你喜欢的方式",
+            "you want": "学习",
+            "Storytelling or fact, skim or dive": "故事或事实，速览或深入",
+            "deep, learning that fits you.": "一切学习方式都为你量身而设。",
+            "Explore your way": "探索你的方式",
+            "Quick": "速览",
+            "The fastest and easiest way to get key insights.": "最快、最轻松地获取关键洞见。",
+            "Why do new ideas sound wrong to p": "为什么新观点一开始听起来不对？",
+            "You": "你",
+            "Talk to the audio,": "随时与音频对话，",
+            "whenever you need": "有问即答",
+            "Most learning platforms teach, we listen.": "大多数学习平台只负责讲授，而我们会倾听。",
+            "Start the talk": "开始对话",
+            "Turn every \"aha\"": "把每一个“顿悟”",
+            "moment into": "时刻融入",
+            "your Mindspace": "你的 Mindspace",
+            "Journals and memories you own,": "属于你的日志与记忆，",
+            "grow, and evolve.": "持续生长、不断演进。",
+            "Build your space": "创建你的空间",
+            "One-Click Blind Control,": "一键盲操作，",
+            "Uninterrupted": "不断流",
+            "Simplifies the complex \"pull out phone - unlock - tap - type\" process into a one-handed physical press": "把“拿出手机—解锁—点按—输入”的复杂流程，简化为单手按下一枚实体按键",
+            "Haptic Feedback": "触觉反馈",
+            "A pebble-sized pocket controller supporting gestures and physical haptic feedback. No need to look —": "鹅卵石大小的口袋控制器，支持手势与实体触觉反馈。无需查看——",
+            "single-hand blind operation.": "单手即可盲操作。",
+            "A pebble-sized pocket controller supporting gestures and physical haptic feedback. No need to look — single-hand blind operation.": "鹅卵石大小的口袋控制器，支持手势与实体触觉反馈。无需查看，单手即可盲操作。",
+            "Bone Conduction Ear Clips": "骨传导耳夹",
+            "Open-ear bone conduction ear clip module with a non-in-ear design. Stay aware of your surroundings while running or commuting — safe yet immersive.": "开放式骨传导耳夹采用非入耳设计。跑步或通勤时仍能感知周围环境，安全又沉浸。",
+            "30-Second Backtrack": "回溯 30 秒",
+            "Heard a key insight? One click marks and transcribes the past 30 seconds of AI audio into notes, auto-syncing to your cloud Mindspace.": "听到关键洞见？一键标记并把过去 30 秒的 AI 音频转写为笔记，自动同步至云端 Mindspace。",
+            "1.5K RATINGS": "1,500 条评分",
+            "Start your learning": "现在开启你的",
+            "journey, now": "学习旅程",
+            "Get it on iOS or Android": "下载 iOS 或 Android 版",
+            "Hey, Katherine": "你好，Katherine",
+            "Start with a learning plan": "从学习计划开始",
+            "Set Your Plan": "设置学习计划",
+            "Tell us what you want to": "告诉我们你想学什么",
+            "learn, we'll do the rest": "其余交给我们",
+            "Discover something new": "发现新知识",
+            "Create my own": "创建我的内容",
+            "Picked for you": "为你精选",
+            "Lost": "失落的",
+            "Symbol": "秘符",
+            "FREE": "免费",
+            "Your Strategy Needs a Strategy": "你的战略需要一种战略",
+            "Knut Haanaes &": "克努特·哈纳斯与",
+            "Janmejaya Sinha Martin": "扬梅贾亚·辛哈·马丁",
+            "KIM SCOTT": "金·斯科特",
+            "Why this": "推荐理由",
+            "\"The First 90 Days\" by Michael D.": "迈克尔·D.《最初的 90 天》",
+            "Learn Anything, Personalized": "个性化学习任何知识",
+            "Featured book summaries": "精选书籍摘要",
+            "Crucial Conversations": "关键对话",
+            "The Perfect Marriage": "完美婚姻",
+            "Into the Wild": "荒野生存",
+            "Never Split the Difference": "绝不妥协",
+            "Attached": "依恋",
+            "Good to Great": "从优秀到卓越",
+            "Say Nothing": "保持沉默",
+            "Trending categories": "热门分类",
+            "Self Help": "自我成长",
+            "Communication Skill": "沟通技巧",
+            "Relationship": "亲密关系",
+            "Mindfulness": "正念",
+            "Philosophy": "哲学",
+            "Inspiration": "灵感",
+            "Productivity": "效率提升",
+            "Celebrities' reading list": "名人书单",
+            "Elon Musk": "埃隆·马斯克",
+            "Charlie Kirk": "查理·柯克",
+            "Bill Gates": "比尔·盖茨",
+            "Steve Jobs": "史蒂夫·乔布斯",
+            "Andrew Huberman": "安德鲁·休伯曼",
+            "Joe Rogan": "乔·罗根",
+            "Jordan Peterson": "乔丹·彼得森",
+            "Award winning collection": "获奖作品集",
+            "Pulitzer Prize": "普利策奖",
+            "National Book Award": "美国国家图书奖",
+            "Goodreads Choice Awards": "Goodreads 读者选择奖",
+            "Nobel": "诺贝尔",
+            "Prize in Literature": "文学奖",
+            "Nobel Prize in Literature": "诺贝尔文学奖",
+            "New York Times": "纽约时报",
+            "Caldecott Medal": "凯迪克奖",
+            "Nebula Award": "星云奖",
+            "Information": "网站信息",
+            "About Us": "关于我们",
+            "Pricing": "价格",
+            "FAQ": "常见问题",
+            "Blog": "博客",
+            "Career": "加入我们",
+            "Partnerships": "合作伙伴",
+            "Ambassador Program": "大使计划",
+            "Directory": "网站目录",
+            "Term of Use": "使用条款",
+            "Privacy Policy": "隐私政策",
+            "Freedia Mascot": "Freedia 吉祥物",
+            "Discussion": "讨论",
+            "TED Talk": "TED 演讲"
+        };
+
+        const originalTextNodes = new WeakMap();
+        const savedLanguage = localStorage.getItem('lorelume-language');
+        let currentLanguage = savedLanguage === 'zh' ? 'zh' : 'en';
+
+        let currentIndex = 0;
+
+        function renderHighlights(text, highlights) {
+            let result = text;
+            // Sort highlights by length descending to avoid partial replacements
+            const sorted = [...highlights].sort((a, b) => b.length - a.length);
+            sorted.forEach(word => {
+                const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const regex = currentLanguage === 'zh'
+                    ? new RegExp(`(${escaped})`, 'g')
+                    : new RegExp(`(\\b${escaped}\\b)`, 'gi');
+                result = result.replace(regex, '<span class="highlight">$1</span>');
+            });
+            return result;
+        }
+
+        function translateSubtree(root, language) {
+            const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+                acceptNode(node) {
+                    const parentTag = node.parentElement?.tagName;
+                    if (!node.nodeValue.trim() || ['SCRIPT', 'STYLE', 'NOSCRIPT'].includes(parentTag)) {
+                        return NodeFilter.FILTER_REJECT;
+                    }
+                    return NodeFilter.FILTER_ACCEPT;
+                }
+            });
+
+            const nodes = [];
+            while (walker.nextNode()) nodes.push(walker.currentNode);
+
+            nodes.forEach(node => {
+                if (!originalTextNodes.has(node)) originalTextNodes.set(node, node.nodeValue);
+                const original = originalTextNodes.get(node);
+                if (language === 'en') {
+                    node.nodeValue = original;
+                    return;
+                }
+
+                const trimmed = original.trim().replace(/\s+/g, ' ');
+                const translated = zhTranslations[trimmed];
+                if (translated !== undefined) {
+                    const leading = original.match(/^\s*/)?.[0] || '';
+                    const trailing = original.match(/\s*$/)?.[0] || '';
+                    node.nodeValue = leading + translated + trailing;
+                }
+            });
+
+            root.querySelectorAll?.('[alt], [title], [aria-label]').forEach(element => {
+                ['alt', 'title', 'aria-label'].forEach(attribute => {
+                    if (!element.hasAttribute(attribute)) return;
+                    const originalKey = `i18nOriginal${attribute.replace('-', '')}`;
+                    if (!element.dataset[originalKey]) element.dataset[originalKey] = element.getAttribute(attribute);
+                    const original = element.dataset[originalKey];
+                    element.setAttribute(attribute, language === 'zh' ? (zhTranslations[original] || original) : original);
+                });
+            });
+        }
+
+        function renderLocalizedTopic() {
+            const topic = topics[currentIndex];
+            const cardCover = document.getElementById('card-cover');
+            const bgText = document.getElementById('bg-text');
+            cardCover.innerHTML = topic.coverHtml;
+            if (currentLanguage === 'zh') translateSubtree(cardCover, 'zh');
+            bgText.innerHTML = renderHighlights(
+                currentLanguage === 'zh' ? topic.bgTextZh : topic.bgText,
+                currentLanguage === 'zh' ? topic.highlightsZh : topic.highlights
+            );
+            document.getElementById('source-count').textContent = currentLanguage === 'zh'
+                ? `${topic.sources} 个来源`
+                : `${topic.sources} sources`;
+            document.querySelectorAll('.topic-btn').forEach((button, index) => {
+                button.textContent = currentLanguage === 'zh' ? topics[index].titleZh : topics[index].title;
+            });
+        }
+
+        function applyLanguage(language) {
+            currentLanguage = language;
+            localStorage.setItem('lorelume-language', language);
+            document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+            document.title = language === 'zh'
+                ? 'LoreLume Pebble - 随行学习伙伴 | 无屏 AI 语音微学习'
+                : 'LoreLume Pebble - Flow Companion | Screen-Free AI Voice Micro-Learning';
+            translateSubtree(document.body, language);
+            renderLocalizedTopic();
+
+            document.getElementById('current-language').textContent = language === 'zh' ? '中文' : 'English';
+            document.querySelectorAll('.language-option').forEach(option => {
+                option.setAttribute('aria-checked', String(option.dataset.lang === language));
+            });
+        }
+
+        function closeLanguageMenu() {
+            document.getElementById('language-menu').classList.add('hidden');
+            document.getElementById('language-toggle').setAttribute('aria-expanded', 'false');
+        }
+
+        function switchTopic(index) {
+            if (index === currentIndex) return;
+            currentIndex = index;
+            const topic = topics[index];
+
+            // Update buttons
+            document.querySelectorAll('.topic-btn').forEach((btn, i) => {
+                if (i === index) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // Update card with animation
+            const cardCover = document.getElementById('card-cover');
+            const playerCard = document.getElementById('player-card');
+
+            playerCard.style.transform = 'scale(0.95) translateY(10px)';
+            playerCard.style.opacity = '0.7';
+
+            setTimeout(() => {
+                cardCover.innerHTML = topic.coverHtml;
+                if (currentLanguage === 'zh') translateSubtree(cardCover, 'zh');
+                document.getElementById('source-count').textContent = currentLanguage === 'zh'
+                    ? topic.sources + ' 个来源'
+                    : topic.sources + ' sources';
+                document.getElementById('time-total').textContent = topic.time;
+                document.getElementById('progress-fill').style.width = index === 4 ? '19%' : '0%';
+
+                playerCard.style.transform = 'scale(1) translateY(0)';
+                playerCard.style.opacity = '1';
+            }, 250);
+
+            // Update background text with fade
+            const bgText = document.getElementById('bg-text');
+            bgText.style.opacity = '0';
+            setTimeout(() => {
+                bgText.innerHTML = renderHighlights(
+                    currentLanguage === 'zh' ? topic.bgTextZh : topic.bgText,
+                    currentLanguage === 'zh' ? topic.highlightsZh : topic.highlights
+                );
+                bgText.style.opacity = '1';
+            }, 300);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            const initial = topics[0];
+            document.getElementById('card-cover').innerHTML = initial.coverHtml;
+            document.getElementById('bg-text').innerHTML = renderHighlights(initial.bgText, initial.highlights);
+
+            const toggle = document.getElementById('language-toggle');
+            const menu = document.getElementById('language-menu');
+            toggle.addEventListener('click', event => {
+                event.stopPropagation();
+                const willOpen = menu.classList.contains('hidden');
+                menu.classList.toggle('hidden');
+                toggle.setAttribute('aria-expanded', String(willOpen));
+            });
+            document.querySelectorAll('.language-option').forEach(option => {
+                option.addEventListener('click', () => {
+                    applyLanguage(option.dataset.lang);
+                    closeLanguageMenu();
+                });
+            });
+            document.addEventListener('click', event => {
+                if (!document.getElementById('language-switcher').contains(event.target)) closeLanguageMenu();
+            });
+            document.addEventListener('keydown', event => {
+                if (event.key === 'Escape') closeLanguageMenu();
+            });
+
+            applyLanguage(currentLanguage);
+        });
+
+        // Register GSAP plugins
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Wave Canvas Animation
+        const waveCanvas = document.getElementById('waveCanvas');
+        const waveCtx = waveCanvas.getContext('2d');
+        let waveAnimationId;
+
+        function resizeWaveCanvas() {
+            waveCanvas.width = waveCanvas.offsetWidth;
+            waveCanvas.height = waveCanvas.offsetHeight;
+        }
+        resizeWaveCanvas();
+        window.addEventListener('resize', resizeWaveCanvas);
+
+        let waveOffset = 0;
+        function drawWave() {
+            waveCtx.clearRect(0, 0, waveCanvas.width, waveCanvas.height);
+            waveCtx.strokeStyle = 'rgba(255, 255, 255, 0.15)';
+            waveCtx.lineWidth = 1;
+
+            for (let i = 0; i < 5; i++) {
+                waveCtx.beginPath();
+                for (let x = 0; x < waveCanvas.width; x++) {
+                    const y = waveCanvas.height / 2 + 
+                        Math.sin((x + waveOffset + i * 100) * 0.01) * 20 +
+                        Math.sin((x + waveOffset * 1.5 + i * 50) * 0.02) * 10;
+                    if (x === 0) waveCtx.moveTo(x, y);
+                    else waveCtx.lineTo(x, y);
+                }
+                waveCtx.stroke();
+            }
+
+            waveOffset += 0.5;
+            waveAnimationId = requestAnimationFrame(drawWave);
+        }
+        drawWave();
+
+        // Particle Background
+        const particleCanvas = document.getElementById('particleCanvas');
+        const pCtx = particleCanvas.getContext('2d');
+        let particles = [];
+
+        function resizeParticleCanvas() {
+            particleCanvas.width = window.innerWidth;
+            particleCanvas.height = window.innerHeight;
+        }
+        resizeParticleCanvas();
+        window.addEventListener('resize', resizeParticleCanvas);
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * particleCanvas.width;
+                this.y = Math.random() * particleCanvas.height;
+                this.size = Math.random() * 2;
+                this.speedX = (Math.random() - 0.5) * 0.2;
+                this.speedY = (Math.random() - 0.5) * 0.2;
+                this.opacity = Math.random() * 0.5;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < 0) this.x = particleCanvas.width;
+                if (this.x > particleCanvas.width) this.x = 0;
+                if (this.y < 0) this.y = particleCanvas.height;
+                if (this.y > particleCanvas.height) this.y = 0;
+            }
+            draw() {
+                pCtx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
+                pCtx.beginPath();
+                pCtx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                pCtx.fill();
+            }
+        }
+
+        for (let i = 0; i < 80; i++) {
+            particles.push(new Particle());
+        }
+
+        function animateParticles() {
+            pCtx.clearRect(0, 0, particleCanvas.width, particleCanvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        // Stars for On Demand section
+        const starsContainer = document.getElementById('starsContainer');
+        for (let i = 0; i < 50; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.width = Math.random() * 3 + 'px';
+            star.style.height = star.style.width;
+            star.style.setProperty('--duration', (Math.random() * 3 + 2) + 's');
+            star.style.animationDelay = Math.random() * 5 + 's';
+            starsContainer.appendChild(star);
+        }
+
+        // Scroll Reveal Animations
+        const revealElements = document.querySelectorAll('.reveal');
+        revealElements.forEach((el, index) => {
+            gsap.to(el, {
+                scrollTrigger: {
+                    trigger: el,
+                    start: 'top 85%',
+                    toggleActions: 'play none none none',
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                delay: index % 3 * 0.1,
+                ease: 'power3.out'
+            });
+        });
+
+        // Parallax for floating cards
+        gsap.utils.toArray('.float-1, .float-2, .float-3, .float-4').forEach((el, i) => {
+            gsap.to(el, {
+                scrollTrigger: {
+                    trigger: el.parentElement,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: 1,
+                },
+                y: (i % 2 === 0 ? -30 : 30),
+            });
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Hero text animation
+        gsap.from('h1', {
+            opacity: 0,
+            y: 50,
+            duration: 1.2,
+            delay: 0.3,
+            ease: 'power3.out'
+        });
+        gsap.from('h1 + p', {
+            opacity: 0,
+            y: 30,
+            duration: 1,
+            delay: 0.6,
+            ease: 'power3.out'
+        });
+        gsap.from('h1 + p + button', {
+            opacity: 0,
+            y: 20,
+            duration: 0.8,
+            delay: 0.9,
+            ease: 'power3.out'
+        });
+    </script>
+</body>
+</html>
