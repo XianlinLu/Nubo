@@ -9,22 +9,22 @@ export async function generateMetadata(): Promise<Metadata> {
   const origin = `${protocol}://${host}`;
 
   return {
-    title: "LoreLume Pebble — Knowledge, in flow.",
-    description: "Screen-free AI voice micro-learning with a tactile pebble controller and open-ear audio.",
+    title: "Nubo — Knowledge, within reach.",
+    description: "AI voice micro-learning with a circular magnetic phone stand that stays attached to your phone.",
     icons: {
       icon: "/favicon.svg",
       shortcut: "/favicon.svg",
     },
     openGraph: {
-      title: "LoreLume Pebble — Knowledge, in flow.",
-      description: "Screen-free AI voice micro-learning with a tactile pebble controller and open-ear audio.",
+      title: "Nubo — Knowledge, within reach.",
+      description: "AI voice micro-learning with a circular magnetic phone stand that stays attached to your phone.",
       type: "website",
-      images: [{ url: `${origin}/og.png`, width: 1536, height: 1024, alt: "LoreLume Pebble" }],
+      images: [{ url: `${origin}/og.png`, width: 1662, height: 946, alt: "Nubo magnetic AI learning stand" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "LoreLume Pebble — Knowledge, in flow.",
-      description: "Screen-free AI voice micro-learning with a tactile pebble controller and open-ear audio.",
+      title: "Nubo — Knowledge, within reach.",
+      description: "AI voice micro-learning with a circular magnetic phone stand that stays attached to your phone.",
       images: [`${origin}/og.png`],
     },
   };

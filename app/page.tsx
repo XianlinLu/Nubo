@@ -3,7 +3,7 @@ export default function Home() {
     <main className="site-frame">
       <iframe
         src="/lorelume.html"
-        title="LoreLume — Screen-free AI voice micro-learning"
+        title="Nubo — Magnetic AI learning stand"
         className="site-frame__content"
       />
     </main>
