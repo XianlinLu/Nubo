@@ -1,0 +1,32 @@
+[
+  {
+    "bgs": [],
+    "i": 1
+  },
+  {
+    "bgs": [],
+    "i": 2
+  },
+  {
+    "bgs": [],
+    "i": 5
+  },
+  {
+    "bgs": [],
+    "i": 6
+  },
+  {
+    "bgs": [
+      {
+        "bgi": "url(\"https://d1y2du6z1jfm9e.cloudfront.net/landing/download_pc_bg.png\")",
+        "cls": "flex w-[327px] h-auto p-[24px] flex-col items-center rounded-[24px] relative lg:w-full lg:max-w-[1000px] lg:h-[550px] lg:pt-[61px] lg:pr-[101px] lg:pl",
+        "h": 550,
+        "tag": "DIV",
+        "w": 1000,
+        "x": 220,
+        "y": 80
+      }
+    ],
+    "i": 7
+  }
+]

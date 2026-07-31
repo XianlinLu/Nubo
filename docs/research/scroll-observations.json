@@ -1,0 +1,212 @@
+[
+  {
+    "step": 0,
+    "y": 0,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-00.png"
+  },
+  {
+    "step": 1,
+    "y": 720,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-01.png"
+  },
+  {
+    "step": 2,
+    "y": 1413.5,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-02.png"
+  },
+  {
+    "step": 3,
+    "y": 2055,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-03.png"
+  },
+  {
+    "step": 4,
+    "y": 2770,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-04.png"
+  },
+  {
+    "step": 5,
+    "y": 3514,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-05.png"
+  },
+  {
+    "step": 6,
+    "y": 4212,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-06.png"
+  },
+  {
+    "step": 7,
+    "y": 5011,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-07.png"
+  },
+  {
+    "step": 8,
+    "y": 5657.5,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-08.png"
+  },
+  {
+    "step": 9,
+    "y": 6367,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-09.png"
+  },
+  {
+    "step": 10,
+    "y": 7098,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-10.png"
+  },
+  {
+    "step": 11,
+    "y": 7807,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-11.png"
+  },
+  {
+    "step": 12,
+    "y": 8524,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-12.png"
+  },
+  {
+    "step": 13,
+    "y": 9251,
+    "header": {
+      "backdrop": "none",
+      "background": "rgba(0, 0, 0, 0)",
+      "cls": "flex bg-transparent justify-between items-center w-full",
+      "height": "44px",
+      "opacity": "1",
+      "position": "static",
+      "tag": "HEADER",
+      "transform": "none"
+    },
+    "path": "/Users/bytedance/Documents/Codex/2026-07-21/new-chat/docs/design-references/befreed-desktop-scroll-13.png"
+  }
+]

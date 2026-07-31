@@ -1,0 +1,2948 @@
+{
+  "backgroundImages": [
+    {
+      "bg": "radial-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0) 60%)",
+      "cls": "absolute inset-0 top-[64px] pointer-events-none",
+      "i": 274,
+      "tag": "DIV"
+    },
+    {
+      "bg": "radial-gradient(circle at 13.5641% 63.5641%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.4) 15%, rgba(0, 0, 0, 0) 35%)",
+      "cls": "absolute inset-0 rounded-[52px] pointer-events-none",
+      "i": 290,
+      "tag": "DIV"
+    },
+    {
+      "bg": "linear-gradient(to right, rgb(107, 53, 212), rgb(130, 69, 224), rgb(107, 53, 212))",
+      "cls": "whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-v",
+      "i": 291,
+      "tag": "BUTTON"
+    },
+    {
+      "bg": "linear-gradient(rgb(30, 30, 30), rgb(25, 28, 46))",
+      "cls": "relative rounded-[24px] border border-white/10 overflow-hidden flex flex-col gap-[24px] p-[24px] w-[344px] h-[485px] cur",
+      "i": 351,
+      "tag": "DIV"
+    },
+    {
+      "bg": "url(\"https://d1y2du6z1jfm9e.cloudfront.net/landing/btn_bg_1.png\")",
+      "cls": "px-6 py-3 text-sm lg:text-[18px] transition-all duration-200 font-advercase whitespace-nowrap flex-shrink-0 rounded-[52p",
+      "i": 368,
+      "tag": "BUTTON"
+    },
+    {
+      "bg": "url(\"https://d1y2du6z1jfm9e.cloudfront.net/landing/btn_bg_2.png\")",
+      "cls": "px-6 py-3 text-sm lg:text-[18px] transition-all duration-200 font-advercase whitespace-nowrap flex-shrink-0 rounded-[52p",
+      "i": 369,
+      "tag": "BUTTON"
+    },
+    {
+      "bg": "url(\"https://d1y2du6z1jfm9e.cloudfront.net/landing/btn_bg_4.png\")",
+      "cls": "px-6 py-3 text-sm lg:text-[18px] transition-all duration-200 font-advercase whitespace-nowrap flex-shrink-0 rounded-[52p",
+      "i": 371,
+      "tag": "BUTTON"
+    },
+    {
+      "bg": "url(\"https://d1y2du6z1jfm9e.cloudfront.net/landing/btn_bg_5.png\")",
+      "cls": "px-6 py-3 text-sm lg:text-[18px] transition-all duration-200 font-advercase whitespace-nowrap flex-shrink-0 rounded-[52p",
+      "i": 372,
+      "tag": "BUTTON"
+    },
+    {
+      "bg": "url(\"https://d1y2du6z1jfm9e.cloudfront.net/landing/moon.png\")",
+      "cls": "pointer-events-none absolute inset-x-0 -z-10",
+      "i": 376,
+      "tag": "DIV"
+    },
+    {
+      "bg": "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0))",
+      "cls": "bg-gradient-to-b from-black/20 to-transparent border-t-2 lg:border-t-4 border-gray-600 rounded-t-[50px] lg:rounded-t-[10",
+      "i": 4328,
+      "tag": "DIV"
+    },
+    {
+      "bg": "url(\"https://d1y2du6z1jfm9e.cloudfront.net/landing/download_pc_bg.png\")",
+      "cls": "flex w-[327px] h-auto p-[24px] flex-col items-center rounded-[24px] relative lg:w-full lg:max-w-[1000px] lg:h-[550px] lg",
+      "i": 5490,
+      "tag": "DIV"
+    }
+  ],
+  "canvasCount": 1,
+  "favicons": [
+    {
+      "href": "https://www.befreed.ai/favicon.ico?favicon.0cp8ol55shrim.ico",
+      "sizes": ""
+    }
+  ],
+  "fontFamilies": [
+    "sans-serif",
+    "Manrope, \"Manrope Fallback\", sans-serif",
+    "advercaseFont, \"advercaseFont Fallback\", sans-serif",
+    "Arial, sans-serif",
+    "\"SF Pro\", \"SF Pro Display\", -apple-system, \"system-ui\", \"sans-serif\""
+  ],
+  "images": [
+    {
+      "alt": "BeFreed",
+      "i": 0,
+      "naturalHeight": 54,
+      "naturalWidth": 192,
+      "parentClass": "flex bg-transparent items-center gap-[10px] cursor-pointer dark:text-white text-black",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.0_t8tcd03q3l4.png&w=192&q=75&dpl=dpl_EQ5ZAevDAEhpr5yW41U3ikNFYg1F",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "BeFreed",
+      "i": 1,
+      "naturalHeight": 54,
+      "naturalWidth": 192,
+      "parentClass": "flex bg-transparent items-center gap-[10px] cursor-pointer dark:text-white text-black",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.0_t8tcd03q3l4.png&w=192&q=75&dpl=dpl_EQ5ZAevDAEhpr5yW41U3ikNFYg1F",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 0",
+      "i": 2,
+      "naturalHeight": 360,
+      "naturalWidth": 360,
+      "parentClass": "block",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-0.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 1",
+      "i": 3,
+      "naturalHeight": 320,
+      "naturalWidth": 480,
+      "parentClass": "",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-1.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 2",
+      "i": 4,
+      "naturalHeight": 320,
+      "naturalWidth": 480,
+      "parentClass": "",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-2.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 3",
+      "i": 5,
+      "naturalHeight": 320,
+      "naturalWidth": 480,
+      "parentClass": "",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-3.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 4",
+      "i": 6,
+      "naturalHeight": 332,
+      "naturalWidth": 686,
+      "parentClass": "",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-4.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 5",
+      "i": 7,
+      "naturalHeight": 480,
+      "naturalWidth": 320,
+      "parentClass": "",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-5.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 6",
+      "i": 8,
+      "naturalHeight": 480,
+      "naturalWidth": 320,
+      "parentClass": "block",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-6.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 7",
+      "i": 9,
+      "naturalHeight": 480,
+      "naturalWidth": 320,
+      "parentClass": "block",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-7.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 8",
+      "i": 10,
+      "naturalHeight": 480,
+      "naturalWidth": 320,
+      "parentClass": "block",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-8.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 9",
+      "i": 11,
+      "naturalHeight": 480,
+      "naturalWidth": 320,
+      "parentClass": "block",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-9.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 10",
+      "i": 12,
+      "naturalHeight": 480,
+      "naturalWidth": 320,
+      "parentClass": "",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-10.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 11",
+      "i": 13,
+      "naturalHeight": 480,
+      "naturalWidth": 320,
+      "parentClass": "",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-11.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 12",
+      "i": 14,
+      "naturalHeight": 320,
+      "naturalWidth": 480,
+      "parentClass": "",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-12.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 13",
+      "i": 15,
+      "naturalHeight": 332,
+      "naturalWidth": 686,
+      "parentClass": "",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-13.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 14",
+      "i": 16,
+      "naturalHeight": 288,
+      "naturalWidth": 686,
+      "parentClass": "",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-14.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 15",
+      "i": 17,
+      "naturalHeight": 360,
+      "naturalWidth": 360,
+      "parentClass": "block",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-15.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Image 16",
+      "i": 18,
+      "naturalHeight": 360,
+      "naturalWidth": 360,
+      "parentClass": "block",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/img-16.png",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Freedia",
+      "i": 19,
+      "naturalHeight": 332,
+      "naturalWidth": 250,
+      "parentClass": "relative inline-block",
+      "position": "absolute",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/freedia_welcome.webp",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Freedia",
+      "i": 20,
+      "naturalHeight": 332,
+      "naturalWidth": 250,
+      "parentClass": "relative inline-block",
+      "position": "absolute",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/freedia_welcome.webp",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "",
+      "i": 21,
+      "naturalHeight": 462,
+      "naturalWidth": 1440,
+      "parentClass": "relative inline-block",
+      "position": "absolute",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Flanding%2Fhero_bg.png&w=1024&q=75",
+      "zIndex": "-1"
+    },
+    {
+      "alt": "Scroll indicator",
+      "i": 22,
+      "naturalHeight": 150,
+      "naturalWidth": 150,
+      "parentClass": "absolute -bottom-4 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-1 justify-center",
+      "position": "static",
+      "src": "https://d1y2du6z1jfm9e.cloudfront.net/landing/scroll.webp",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "The 5 Love Languages",
+      "i": 23,
+      "naturalHeight": 344,
+      "naturalWidth": 344,
+      "parentClass": "w-full flex-shrink-0 h-[296px] relative",
+      "position": "absolute",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Flanding%2Fpodcast_5.png&w=384&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "sources",
+      "i": 24,
+      "naturalHeight": 20,
+      "naturalWidth": 48,
+      "parentClass": "flex self-center items-center justify-center gap-1 flex-shrink-0 bg-black/[0.45] rounded-[45px] py-[4px] px-[8px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Flanding%2Fsources_icon.png&w=48&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Play",
+      "i": 25,
+      "naturalHeight": 64,
+      "naturalWidth": 64,
+      "parentClass": "flex-shrink-0 w-16 h-16 rounded-full",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Flanding%2Fplay.png&w=64&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Galaxy background",
+      "i": 26,
+      "naturalHeight": 2694,
+      "naturalWidth": 1440,
+      "parentClass": "pointer-events-none absolute inset-x-0 -z-20",
+      "position": "absolute",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Flanding%2Fgalaxy_new.png&w=1024&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 27,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-useast5-p-0068-tx/oYSCgfutcw6IBUYIE48iA3ApzBNiIOly0RYGj1~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=FushclYvu6W5%2F1HCO5XCd3ITyPw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 28,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oIOxEvA0CwxISpI5HiJgfBRAtI4BNixRoyrC2C~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=21vvcr7tKK56fAx7GqWRtrhxACY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 29,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oIFxTiIo8AjCBezDEr1tHR3BU2yfIJAlEbMgID~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=tqasaFKAZkcIH17%2F04jyenAvSZk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 30,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oca9lPBBBZ8E2APi3z6ainnEvnbmYGbZZBIlZ~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=kH7uV0VeEyT51nMrCjslw9iOWhE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 31,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oklKIVf4AhAjAIKxRyQvewL0I7LiIjeODOCUGi~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=IN0jwV9h26WZ%2BdIRM5STa4BdtK0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 32,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-useast5-p-0068-tx/oYSCgfutcw6IBUYIE48iA3ApzBNiIOly0RYGj1~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=FushclYvu6W5%2F1HCO5XCd3ITyPw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 33,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oIOxEvA0CwxISpI5HiJgfBRAtI4BNixRoyrC2C~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=21vvcr7tKK56fAx7GqWRtrhxACY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 34,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oIFxTiIo8AjCBezDEr1tHR3BU2yfIJAlEbMgID~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=tqasaFKAZkcIH17%2F04jyenAvSZk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 35,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oca9lPBBBZ8E2APi3z6ainnEvnbmYGbZZBIlZ~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=kH7uV0VeEyT51nMrCjslw9iOWhE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 36,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oklKIVf4AhAjAIKxRyQvewL0I7LiIjeODOCUGi~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=IN0jwV9h26WZ%2BdIRM5STa4BdtK0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 37,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 38,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 39,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 40,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 41,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 42,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 43,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 44,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 45,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 46,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 47,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 48,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 49,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 50,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 51,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 52,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 53,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 54,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 55,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fin_icon.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 56,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 57,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 58,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 59,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 60,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 61,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 62,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 63,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 64,
+      "naturalHeight": 25,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Freddit_icon.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 65,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 66,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 67,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 68,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 69,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 70,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 71,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 72,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 73,
+      "naturalHeight": 25,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Freddit_icon.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 74,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "thumbsUp",
+      "i": 75,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FThumbsUp.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 76,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 77,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 78,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 79,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 80,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 81,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 82,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 83,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 84,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 85,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 86,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 87,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 88,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 89,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 90,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 91,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-useast5-p-0068-tx/oYSCgfutcw6IBUYIE48iA3ApzBNiIOly0RYGj1~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=FushclYvu6W5%2F1HCO5XCd3ITyPw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 92,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oIOxEvA0CwxISpI5HiJgfBRAtI4BNixRoyrC2C~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=21vvcr7tKK56fAx7GqWRtrhxACY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 93,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oIFxTiIo8AjCBezDEr1tHR3BU2yfIJAlEbMgID~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=tqasaFKAZkcIH17%2F04jyenAvSZk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 94,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oca9lPBBBZ8E2APi3z6ainnEvnbmYGbZZBIlZ~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=kH7uV0VeEyT51nMrCjslw9iOWhE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 95,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oklKIVf4AhAjAIKxRyQvewL0I7LiIjeODOCUGi~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=IN0jwV9h26WZ%2BdIRM5STa4BdtK0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 96,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-useast5-p-0068-tx/oYSCgfutcw6IBUYIE48iA3ApzBNiIOly0RYGj1~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=FushclYvu6W5%2F1HCO5XCd3ITyPw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 97,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oIOxEvA0CwxISpI5HiJgfBRAtI4BNixRoyrC2C~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=21vvcr7tKK56fAx7GqWRtrhxACY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 98,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oIFxTiIo8AjCBezDEr1tHR3BU2yfIJAlEbMgID~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=tqasaFKAZkcIH17%2F04jyenAvSZk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 99,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oca9lPBBBZ8E2APi3z6ainnEvnbmYGbZZBIlZ~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=kH7uV0VeEyT51nMrCjslw9iOWhE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "TikTok video thumbnail",
+      "i": 100,
+      "naturalHeight": 1920,
+      "naturalWidth": 1080,
+      "parentClass": "absolute inset-0 opacity-100",
+      "position": "static",
+      "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oklKIVf4AhAjAIKxRyQvewL0I7LiIjeODOCUGi~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=IN0jwV9h26WZ%2BdIRM5STa4BdtK0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 101,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 102,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 103,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 104,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 105,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 106,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 107,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 108,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 109,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 110,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 111,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 112,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 113,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 114,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 115,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 116,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 117,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 118,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 119,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fin_icon.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 120,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 121,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 122,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 123,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 124,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 125,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 126,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 127,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 128,
+      "naturalHeight": 25,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Freddit_icon.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 129,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 130,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 131,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 132,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 133,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 134,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 135,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 136,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 137,
+      "naturalHeight": 25,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Freddit_icon.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 138,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "thumbsUp",
+      "i": 139,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FThumbsUp.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 140,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 141,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 142,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 143,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 144,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 145,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 146,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 147,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 148,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 149,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 150,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 151,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 152,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 153,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 154,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 155,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 156,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 157,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 158,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 159,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 160,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 161,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 162,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 163,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 164,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 165,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 166,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 167,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 168,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 169,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 170,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 171,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 172,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 173,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fin_icon.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 174,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 175,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 176,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 177,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 178,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 179,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 180,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 181,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 182,
+      "naturalHeight": 25,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Freddit_icon.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 183,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 184,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 185,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 186,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 187,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 188,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 189,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 190,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 191,
+      "naturalHeight": 25,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Freddit_icon.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 192,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "thumbsUp",
+      "i": 193,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FThumbsUp.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 194,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 195,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 196,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 197,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 198,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 199,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 200,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 201,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 202,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 203,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 204,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 205,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 206,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 207,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 208,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 209,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 210,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 211,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 212,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 213,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 214,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 215,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 216,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 217,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 218,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 219,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 220,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 221,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 222,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 223,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 224,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 225,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 226,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 227,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fin_icon.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 228,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 229,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 230,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 231,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 232,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 233,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 234,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 235,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 236,
+      "naturalHeight": 25,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Freddit_icon.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 237,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 238,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 239,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 240,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 241,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 242,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 243,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 244,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 245,
+      "naturalHeight": 25,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Freddit_icon.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 246,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "thumbsUp",
+      "i": 247,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FThumbsUp.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 248,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 249,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 250,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 251,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 252,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 253,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 254,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "comments",
+      "i": 255,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "likes",
+      "i": 256,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "platform",
+      "i": 257,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 258,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 259,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 260,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 261,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "star",
+      "i": 262,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "relative w-[20px] h-[20px] flex-shrink-0",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "BeFreed App",
+      "i": 263,
+      "naturalHeight": 584,
+      "naturalWidth": 384,
+      "parentClass": "hidden lg:flex w-[281px] justify-end items-center flex-shrink-0",
+      "position": "absolute",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Fdownload%2Fiphone_260213.png&w=384&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "BeFreed",
+      "i": 264,
+      "naturalHeight": 54,
+      "naturalWidth": 192,
+      "parentClass": "flex bg-transparent items-center gap-[10px] cursor-pointer dark:text-white text-black",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.0_t8tcd03q3l4.png&w=192&q=75&dpl=dpl_EQ5ZAevDAEhpr5yW41U3ikNFYg1F",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Discord",
+      "i": 265,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "hover:opacity-70 transition-opacity",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fdiscord.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "LinkedIn",
+      "i": 266,
+      "naturalHeight": 61,
+      "naturalWidth": 60,
+      "parentClass": "hover:opacity-70 transition-opacity",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fin.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 267,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[8px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 268,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[8px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 269,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[8px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 270,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[8px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 271,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[8px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 272,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[8px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 273,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[8px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 274,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[8px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "BeFreed",
+      "i": 275,
+      "naturalHeight": 54,
+      "naturalWidth": 192,
+      "parentClass": "flex bg-transparent items-center gap-[10px] cursor-pointer dark:text-white text-black",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.0_t8tcd03q3l4.png&w=192&q=75&dpl=dpl_EQ5ZAevDAEhpr5yW41U3ikNFYg1F",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "Discord",
+      "i": 276,
+      "naturalHeight": 24,
+      "naturalWidth": 24,
+      "parentClass": "hover:opacity-70 transition-opacity",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fdiscord.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "LinkedIn",
+      "i": 277,
+      "naturalHeight": 61,
+      "naturalWidth": 60,
+      "parentClass": "hover:opacity-70 transition-opacity",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fin.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 278,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[4px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 279,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[4px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 280,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[4px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 281,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[4px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 282,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[4px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 283,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[4px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 284,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[4px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    },
+    {
+      "alt": "arrow",
+      "i": 285,
+      "naturalHeight": 48,
+      "naturalWidth": 49,
+      "parentClass": "flex items-center gap-[4px]",
+      "position": "static",
+      "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FArrowUpRight.png&w=24&q=75",
+      "zIndex": "auto"
+    }
+  ],
+  "inlineSvgCount": 55,
+  "videos": []
+}

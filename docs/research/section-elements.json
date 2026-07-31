@@ -1,0 +1,1163 @@
+[
+  {
+    "buttons": [],
+    "i": 1,
+    "images": []
+  },
+  {
+    "buttons": [],
+    "i": 2,
+    "images": []
+  },
+  {
+    "buttons": [
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 485,
+        "radius": "0px",
+        "tag": "A",
+        "text": "16 sources\n0:00\n0:00",
+        "w": 344,
+        "x": 548,
+        "y": 0
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 64,
+        "radius": "9999px",
+        "tag": "BUTTON",
+        "text": "",
+        "w": 64,
+        "x": 573,
+        "y": 401
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 44,
+        "radius": "52px",
+        "tag": "BUTTON",
+        "text": "The Thoughts of Friedrich Nietzsche",
+        "w": 328.046875,
+        "x": 26.3515625,
+        "y": 533
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 44,
+        "radius": "52px",
+        "tag": "BUTTON",
+        "text": "The Charisma Myth",
+        "w": 199.1640625,
+        "x": 370.3984375,
+        "y": 533
+      },
+      {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(10, 10, 10)",
+        "h": 44,
+        "radius": "52px",
+        "tag": "BUTTON",
+        "text": "The 5 Love Languages",
+        "w": 219.921875,
+        "x": 585.5625,
+        "y": 533
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 44,
+        "radius": "52px",
+        "tag": "BUTTON",
+        "text": "Control Your Dopamine",
+        "w": 233.6171875,
+        "x": 821.484375,
+        "y": 533
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 44,
+        "radius": "52px",
+        "tag": "BUTTON",
+        "text": "The Mental Habits of Effective Leaders",
+        "w": 342.5390625,
+        "x": 1071.1015625,
+        "y": 533
+      },
+      {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "h": 44,
+        "radius": "52px",
+        "tag": "BUTTON",
+        "text": "Get started",
+        "w": 221,
+        "x": 609.5,
+        "y": 643
+      }
+    ],
+    "i": 4,
+    "images": [
+      {
+        "alt": "The 5 Love Languages",
+        "cls": "object-cover",
+        "h": 296,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Flanding%2Fpodcast_5.png&w=384&q=75",
+        "w": 294,
+        "x": 573,
+        "y": 25
+      },
+      {
+        "alt": "sources",
+        "cls": "object-contain",
+        "h": 19.578125,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Flanding%2Fsources_icon.png&w=48&q=75",
+        "w": 47,
+        "x": 654.25,
+        "y": 351.2109375
+      },
+      {
+        "alt": "Play",
+        "cls": "w-full h-full",
+        "h": 64,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Flanding%2Fplay.png&w=64&q=75",
+        "w": 64,
+        "x": 573,
+        "y": 401
+      },
+      {
+        "alt": "Galaxy background",
+        "cls": "object-cover",
+        "h": 2700,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Flanding%2Fgalaxy_new.png&w=1024&q=75",
+        "w": 1440,
+        "x": 0,
+        "y": 687
+      }
+    ]
+  },
+  {
+    "buttons": [
+      {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "h": 44,
+        "radius": "48px",
+        "tag": "BUTTON",
+        "text": "Create it now",
+        "w": 179.828125,
+        "x": 456.171875,
+        "y": 388
+      },
+      {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "h": 0,
+        "radius": "48px",
+        "tag": "BUTTON",
+        "text": "Create it now",
+        "w": 0,
+        "x": 0,
+        "y": -3823
+      },
+      {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "h": 44,
+        "radius": "48px",
+        "tag": "BUTTON",
+        "text": "Pick your voice",
+        "w": 193.765625,
+        "x": 804,
+        "y": 838
+      },
+      {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "h": 0,
+        "radius": "48px",
+        "tag": "BUTTON",
+        "text": "Pick your voice",
+        "w": 0,
+        "x": 0,
+        "y": -3823
+      },
+      {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "h": 44,
+        "radius": "48px",
+        "tag": "BUTTON",
+        "text": "Explore your way",
+        "w": 209.890625,
+        "x": 426.109375,
+        "y": 1324
+      },
+      {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "h": 0,
+        "radius": "48px",
+        "tag": "BUTTON",
+        "text": "Explore your way",
+        "w": 0,
+        "x": 0,
+        "y": -3823
+      },
+      {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "h": 44,
+        "radius": "48px",
+        "tag": "BUTTON",
+        "text": "Start the talk",
+        "w": 178.9765625,
+        "x": 804,
+        "y": 1792
+      },
+      {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "h": 0,
+        "radius": "48px",
+        "tag": "BUTTON",
+        "text": "Start the talk",
+        "w": 0,
+        "x": 0,
+        "y": -3823
+      },
+      {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "h": 44,
+        "radius": "48px",
+        "tag": "BUTTON",
+        "text": "Build your space",
+        "w": 206.4296875,
+        "x": 429.5703125,
+        "y": 2290
+      },
+      {
+        "bg": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "h": 0,
+        "radius": "48px",
+        "tag": "BUTTON",
+        "text": "Build your space",
+        "w": 0,
+        "x": 0,
+        "y": -3823
+      }
+    ],
+    "i": 5,
+    "images": []
+  },
+  {
+    "buttons": [
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 30,
+        "radius": "0px",
+        "tag": "A",
+        "text": "See more on how BeFreed is discussed across the web",
+        "w": 549.0625,
+        "x": 445.46875,
+        "y": 431
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 360,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 220,
+        "x": 20,
+        "y": 537
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 360,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 220,
+        "x": 256,
+        "y": 537
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 360,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 220,
+        "x": 492,
+        "y": 537
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 360,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 220,
+        "x": 728,
+        "y": 537
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 360,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 220,
+        "x": 964,
+        "y": 537
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 360,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 220,
+        "x": 1200,
+        "y": 537
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 50,
+        "radius": "0px",
+        "tag": "A",
+        "text": "View All",
+        "w": 125.4765625,
+        "x": 657.2578125,
+        "y": 929
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 50,
+        "radius": "9999px",
+        "tag": "BUTTON",
+        "text": "View All",
+        "w": 125.4765625,
+        "x": 657.2578125,
+        "y": 929
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "A",
+        "text": "See more on how BeFreed is discussed across the web",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "BUTTON",
+        "text": "Play video",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "0px",
+        "tag": "A",
+        "text": "View All",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 0,
+        "radius": "9999px",
+        "tag": "BUTTON",
+        "text": "View All",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      }
+    ],
+    "i": 6,
+    "images": [
+      {
+        "alt": "TikTok video thumbnail",
+        "cls": "w-full h-full object-cover",
+        "h": 360,
+        "src": "https://p16-common-sign.tiktokcdn.com/tos-useast5-p-0068-tx/oYSCgfutcw6IBUYIE48iA3ApzBNiIOly0RYGj1~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=FushclYvu6W5%2F1HCO5XCd3ITyPw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+        "w": 220,
+        "x": 20,
+        "y": 537
+      },
+      {
+        "alt": "TikTok video thumbnail",
+        "cls": "w-full h-full object-cover",
+        "h": 360,
+        "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oIOxEvA0CwxISpI5HiJgfBRAtI4BNixRoyrC2C~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=21vvcr7tKK56fAx7GqWRtrhxACY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+        "w": 220,
+        "x": 256,
+        "y": 537
+      },
+      {
+        "alt": "TikTok video thumbnail",
+        "cls": "w-full h-full object-cover",
+        "h": 360,
+        "src": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oIFxTiIo8AjCBezDEr1tHR3BU2yfIJAlEbMgID~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=tqasaFKAZkcIH17%2F04jyenAvSZk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+        "w": 220,
+        "x": 492,
+        "y": 537
+      },
+      {
+        "alt": "TikTok video thumbnail",
+        "cls": "w-full h-full object-cover",
+        "h": 360,
+        "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oca9lPBBBZ8E2APi3z6ainnEvnbmYGbZZBIlZ~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=kH7uV0VeEyT51nMrCjslw9iOWhE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+        "w": 220,
+        "x": 964,
+        "y": 537
+      },
+      {
+        "alt": "TikTok video thumbnail",
+        "cls": "w-full h-full object-cover",
+        "h": 360,
+        "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oklKIVf4AhAjAIKxRyQvewL0I7LiIjeODOCUGi~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=IN0jwV9h26WZ%2BdIRM5STa4BdtK0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+        "w": 220,
+        "x": 1200,
+        "y": 537
+      },
+      {
+        "alt": "TikTok video thumbnail",
+        "cls": "w-full h-full object-cover",
+        "h": 0,
+        "src": "https://p16-common-sign.tiktokcdn.com/tos-useast5-p-0068-tx/oYSCgfutcw6IBUYIE48iA3ApzBNiIOly0RYGj1~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=FushclYvu6W5%2F1HCO5XCd3ITyPw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "alt": "TikTok video thumbnail",
+        "cls": "w-full h-full object-cover",
+        "h": 0,
+        "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oIOxEvA0CwxISpI5HiJgfBRAtI4BNixRoyrC2C~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=21vvcr7tKK56fAx7GqWRtrhxACY%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "alt": "TikTok video thumbnail",
+        "cls": "w-full h-full object-cover",
+        "h": 0,
+        "src": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/oIFxTiIo8AjCBezDEr1tHR3BU2yfIJAlEbMgID~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=tqasaFKAZkcIH17%2F04jyenAvSZk%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "alt": "TikTok video thumbnail",
+        "cls": "w-full h-full object-cover",
+        "h": 0,
+        "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oca9lPBBBZ8E2APi3z6ainnEvnbmYGbZZBIlZ~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=kH7uV0VeEyT51nMrCjslw9iOWhE%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "alt": "TikTok video thumbnail",
+        "cls": "w-full h-full object-cover",
+        "h": 0,
+        "src": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oklKIVf4AhAjAIKxRyQvewL0I7LiIjeODOCUGi~tplv-tiktokx-origin.image?dr=14575&x-expires=1785650400&x-signature=IN0jwV9h26WZ%2BdIRM5STa4BdtK0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my",
+        "w": 0,
+        "x": 0,
+        "y": -6355
+      },
+      {
+        "alt": "platform",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+        "w": 20,
+        "x": 67,
+        "y": 1313
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 218.6875,
+        "y": 1313
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 245.390625,
+        "y": 1313
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 272.09375,
+        "y": 1313
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 298.796875,
+        "y": 1313
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 325.5,
+        "y": 1313
+      },
+      {
+        "alt": "platform",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+        "w": 20,
+        "x": 67,
+        "y": 1556
+      },
+      {
+        "alt": "comments",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+        "w": 20,
+        "x": 237.3203125,
+        "y": 1556
+      },
+      {
+        "alt": "likes",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+        "w": 20,
+        "x": 298.921875,
+        "y": 1556
+      },
+      {
+        "alt": "platform",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+        "w": 20,
+        "x": 67,
+        "y": 1799
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 218.6875,
+        "y": 1799
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 245.390625,
+        "y": 1799
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 272.09375,
+        "y": 1799
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 298.796875,
+        "y": 1799
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 325.5,
+        "y": 1799
+      },
+      {
+        "alt": "platform",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+        "w": 20,
+        "x": 409.5,
+        "y": 1313
+      },
+      {
+        "alt": "comments",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+        "w": 20,
+        "x": 575.34375,
+        "y": 1313
+      },
+      {
+        "alt": "likes",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+        "w": 20,
+        "x": 636.9453125,
+        "y": 1313
+      },
+      {
+        "alt": "platform",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fin_icon.png&w=24&q=75",
+        "w": 20,
+        "x": 409.5,
+        "y": 1534
+      },
+      {
+        "alt": "comments",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+        "w": 20,
+        "x": 574.359375,
+        "y": 1534
+      },
+      {
+        "alt": "likes",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+        "w": 20,
+        "x": 647.515625,
+        "y": 1534
+      },
+      {
+        "alt": "platform",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+        "w": 20,
+        "x": 409.5,
+        "y": 1755
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 561.1875,
+        "y": 1755
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 587.890625,
+        "y": 1755
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 614.59375,
+        "y": 1755
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 641.296875,
+        "y": 1755
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 668,
+        "y": 1755
+      },
+      {
+        "alt": "platform",
+        "cls": "object-contain",
+        "h": 20.828125,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Freddit_icon.png&w=24&q=75",
+        "w": 20,
+        "x": 752,
+        "y": 1313
+      },
+      {
+        "alt": "comments",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+        "w": 20,
+        "x": 907.765625,
+        "y": 1313
+      },
+      {
+        "alt": "likes",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+        "w": 20,
+        "x": 973.2265625,
+        "y": 1313
+      },
+      {
+        "alt": "platform",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+        "w": 20,
+        "x": 752,
+        "y": 1556
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 903.6875,
+        "y": 1556
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 930.390625,
+        "y": 1556
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 957.09375,
+        "y": 1556
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 983.796875,
+        "y": 1556
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 1010.5,
+        "y": 1556
+      },
+      {
+        "alt": "platform",
+        "cls": "object-contain",
+        "h": 20.828125,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Freddit_icon.png&w=24&q=75",
+        "w": 20,
+        "x": 752,
+        "y": 1777
+      },
+      {
+        "alt": "comments",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+        "w": 20,
+        "x": 917.3984375,
+        "y": 1777
+      },
+      {
+        "alt": "thumbsUp",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FThumbsUp.png&w=24&q=75",
+        "w": 20,
+        "x": 988.390625,
+        "y": 1777
+      },
+      {
+        "alt": "platform",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+        "w": 20,
+        "x": 1094.5,
+        "y": 1312
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 1246.1875,
+        "y": 1312
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 1272.890625,
+        "y": 1312
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 1299.59375,
+        "y": 1312
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 1326.296875,
+        "y": 1312
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 1353,
+        "y": 1312
+      },
+      {
+        "alt": "platform",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Ftwitter.png&w=24&q=75",
+        "w": 20,
+        "x": 1094.5,
+        "y": 1533
+      },
+      {
+        "alt": "comments",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FChatCircle.png&w=24&q=75",
+        "w": 20,
+        "x": 1257.09375,
+        "y": 1533
+      },
+      {
+        "alt": "likes",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Flike.png&w=24&q=75",
+        "w": 20,
+        "x": 1320.046875,
+        "y": 1533
+      },
+      {
+        "alt": "platform",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2Fappstore.png&w=24&q=75",
+        "w": 20,
+        "x": 1094.5,
+        "y": 1753
+      },
+      {
+        "alt": "star",
+        "cls": "object-contain",
+        "h": 20,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Flanding%2FStar.png&w=24&q=75",
+        "w": 20,
+        "x": 1246.1875,
+        "y": 1753
+      }
+    ]
+  },
+  {
+    "buttons": [
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "h": 58,
+        "radius": "8px",
+        "tag": "BUTTON",
+        "text": "Get it on iOS or Android",
+        "w": 259.8125,
+        "x": 401.09375,
+        "y": 476.5
+      }
+    ],
+    "i": 7,
+    "images": [
+      {
+        "alt": "BeFreed App",
+        "cls": "absolute bottom-[1px] object-contain",
+        "h": 427.3515625,
+        "src": "https://www.befreed.ai/_next/image?url=https%3A%2F%2Fd1y2du6z1jfm9e.cloudfront.net%2Fassets%2Fdownload%2Fiphone_260213.png&w=384&q=75",
+        "w": 281,
+        "x": 838,
+        "y": 201.6484375
+      }
+    ]
+  }
+]
