@@ -1,12 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
   <defs>
-    <linearGradient id="g" x1="5" y1="4" x2="36" y2="37" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#f2b66d"/>
-      <stop offset=".48" stop-color="#a56bf2"/>
-      <stop offset="1" stop-color="#6157e8"/>
+    <linearGradient id="a" x1="8" y1="7" x2="38" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffb14f"/>
+      <stop offset=".55" stop-color="#f47c3f"/>
+      <stop offset="1" stop-color="#b859b6"/>
     </linearGradient>
   </defs>
-  <circle cx="20" cy="20" r="17.5" fill="url(#g)"/>
-  <circle cx="20" cy="20" r="13" stroke="#fff" stroke-opacity=".28" stroke-width="1.2"/>
-  <path d="M12.5 27V13l15 14V13" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path fill="url(#a)" d="M8.2 30.5c-1.8-6.2 1.5-13 6.7-16.6l-1-6.8 6.2 3.8A16 16 0 0 1 35 15.4l5.8-.9-3 5.4c3.5 8.2-1.2 17.7-10.1 20C19 42 10.6 38.7 8.2 30.5Z"/>
+  <ellipse cx="19" cy="25" rx="3.3" ry="4.5" fill="#141414"/>
+  <ellipse cx="31.5" cy="25" rx="3.3" ry="4.5" fill="#141414"/>
+  <path d="M21 32c2.5 1.8 5.5 1.8 8 0" fill="none" stroke="#141414" stroke-width="2.2" stroke-linecap="round"/>
 </svg>
