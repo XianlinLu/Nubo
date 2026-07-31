@@ -3,7 +3,7 @@ export default function Home() {
     <main className="site-frame">
       <iframe
         src="/lorelume.html"
-        title="Nubo — Magnetic AI learning stand"
+        title="Nubo — 圆形磁吸学习支架"
         className="site-frame__content"
       />
     </main>
