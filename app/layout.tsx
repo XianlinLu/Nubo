@@ -9,22 +9,32 @@ export async function generateMetadata(): Promise<Metadata> {
   const origin = `${protocol}://${host}`;
 
   return {
-    title: "Nubo — 圆形磁吸学习支架",
-    description: "Nubo 通过圆形磁吸手机支架，把硬件交互与 AI 音频微学习自然连接起来。",
+    title: "BeFreed: Personalized Audio Learning for Anything",
+    description:
+      "Grow daily with personalized audio lessons sourced from books, research papers, and domain experts.",
     icons: {
       icon: "/favicon.svg",
       shortcut: "/favicon.svg",
     },
     openGraph: {
-      title: "Nubo — 吸住手机，也吸住灵感",
-      description: "圆形磁吸硬件与 AI 音频学习体验。",
+      title: "BeFreed: Personalized Audio Learning for Anything",
+      description:
+        "Personalized audio lessons in your language, voice, and learning depth.",
       type: "website",
-      images: [{ url: `${origin}/og.png`, width: 1662, height: 946, alt: "Nubo magnetic AI learning stand" }],
+      images: [
+        {
+          url: `${origin}/og.png`,
+          width: 1662,
+          height: 946,
+          alt: "BeFreed personalized audio learning",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Nubo — 吸住手机，也吸住灵感",
-      description: "圆形磁吸硬件与 AI 音频学习体验。",
+      title: "BeFreed: Personalized Audio Learning for Anything",
+      description:
+        "Personalized audio lessons in your language, voice, and learning depth.",
       images: [`${origin}/og.png`],
     },
   };
@@ -32,7 +42,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="zh-CN">
+    <html lang="en">
       <body>{children}</body>
     </html>
   );
