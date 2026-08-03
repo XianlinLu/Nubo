@@ -34,6 +34,7 @@ test("renders the complete BeFreed landing page", async () => {
   assert.match(html, /Listen to knowledge, on demand/);
   assert.match(html, /Community Of 884,439 Curious Minds/);
   assert.match(html, /Start your learning/);
+  assert.match(html, /aria-label="Nubo"/);
   assert.doesNotMatch(html, /<iframe/i);
-  assert.doesNotMatch(html, /Nubo|圆形磁吸|hardware interaction/i);
+  assert.doesNotMatch(html, /圆形磁吸|hardware interaction|Magnetic Learning Hardware/i);
 });
